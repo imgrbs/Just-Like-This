@@ -1,6 +1,6 @@
 {
     "showcase" : {
-        "Piano": {
+        "piano": {
             "content1":"“Owing to its perfection, the Steinway gives the pianist, wherever he plays, absolute security.”",
             
             "content2":"Description : Measuring 227 cm in length, this concert grand offers a large variety of sound and touch from soft piano to strong forte, from clear treble to deep bass.",
@@ -12,12 +12,20 @@
             "content5":"Pedals : Heavy, slid brass. Soft, sustaining, and full sostenuto"
             
         },
-        "Saxophone" : {
+        "violin" : {
+            
+        },
+        "cello" : {
 
+        },
+        "guitar" : {
+
+        },
+        "harmo" : {
+            
+        },
+        "saxo" : {
+            
         }
-    },
-    "list" : {
-        //
     }
-    
 }

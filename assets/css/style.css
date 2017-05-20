@@ -1,34 +1,50 @@
-#nav{
-    background-color: rgba(255, 255, 255, 0);
+@font-face {
+    font-family: 'SF';
+    src: url(../fonts/sf-pro.otf);
+}
+*{
+    font-family: 'SF' !important;
+}
+body{
+    /*overflow-x: hidden;*/
+    margin: 0;
+}
+nav{
+    z-index: 9999;
 }
 #footer{
+    color: #fff;
+    padding: 5em 3em;
     min-height: 35vh;
     background-image: url('../images/piano/SteinwayLogo.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
 #pic1{
+    padding-top: 2em; 
     background-color: rgba(255, 255, 255, 0.5);
     background-image: url('../images/piano/steinway-concept.jpg');
     background-size: cover;
     background-attachment: fixed;
-    min-height: 90vh;
+    background-position: center;
+    min-height: 95vh;
 }
 #content1{
     min-height: 40vh;
 }
 #pic2{
+    padding: 5em 3em;
     background-color: rgba(255, 255, 255, 0.5);
     background-image: url('../images/piano/steinway-piano2.jpg');
     background-size: cover;
     background-attachment: fixed;
-    min-height: 90vh;
+    min-height: 75vh;
 }
 #content2{
     min-height: 40vh;
 }
 .content{
-    padding: 5em 10em;
+    padding: 2em 3em;
 }
 
 li a {
@@ -50,7 +66,7 @@ li a {
     margin: 0 0.5em;
 }
 
-#pic1 #promotext{
+.promotext{
     color: #fff;
     position: absolute;
     top: 50%;
@@ -58,4 +74,16 @@ li a {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    /*text-shadow: 0px 0px 5px #000;*/
+}
+
+@media only screen 
+and (min-width:0px)
+and (max-width:736px){
+    .navbar-nav{
+        margin-top: 5px;
+        padding: 1em;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.90);
+    }
 }
