@@ -1,0 +1,32 @@
+#nav{
+    background-color: rgba(255, 255, 255, 0);
+}
+#footer{
+    min-height: 35vh;
+    background-image: url('../images/piano/SteinwayLogo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    filter:opacity(70%);
+}
+#pic1{
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url('../images/piano/steinway-concept.jpg');
+    filter:opacity(70%);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 90vh;
+}
+#content1{
+    min-height: 90vh;
+}
+#pic2{
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url('../images/piano/steinway-piano2.jpg');
+    filter:opacity(70%);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 90vh;
+}
+#content2{
+    min-height: 90vh;
+}
