@@ -17,8 +17,11 @@ var getOnStart = ()=>{
         globalData = data;
         var obj = [Object.keys(globalData.showcase)[0],globalData.showcase.Piano.content1,
         globalData.showcase.Piano.content2,globalData.showcase.Piano.content3,
-        globalData.showcase.Piano.content4,globalData.showcase.Piano.content5];    
-        changeName(obj)
+        globalData.showcase.Piano.content4,globalData.showcase.Piano.content5,
+        globalData.showcase.Piano.pathbg1];    
+        setTimeout(()=>{
+            changeName(obj)
+        },100)
     });
 }
 
@@ -33,7 +36,8 @@ var getContent = (id)=>{
                         }
                         obj = [Object.keys(globalData.showcase)[0],globalData.showcase.Piano.content1,
                         globalData.showcase.Piano.content2,globalData.showcase.Piano.content3,
-                        globalData.showcase.Piano.content4,globalData.showcase.Piano.content5];
+                        globalData.showcase.Piano.content4,globalData.showcase.Piano.content5,
+                        globalData.showcase.Piano.pathbg1];
                     }break;
                 case (btn[1]):{
                         $(btn[0]).attr('class','nav-link');
@@ -42,7 +46,8 @@ var getContent = (id)=>{
                         }
                         obj = [Object.keys(globalData.showcase)[1],globalData.showcase.Violin.content1,
                         globalData.showcase.Violin.content2,globalData.showcase.Violin.content3,
-                        globalData.showcase.Violin.content4,globalData.showcase.Violin.content5];
+                        globalData.showcase.Violin.content4,globalData.showcase.Violin.content5,
+                        globalData.showcase.Violin.pathbg1];
                     }break;
                 case (btn[2]):{
                         for (var i = 0; i < 2; i++) {
@@ -53,7 +58,8 @@ var getContent = (id)=>{
                         }
                         obj = [Object.keys(globalData.showcase)[2],globalData.showcase.Cello.content1,
                         globalData.showcase.Cello.content2,globalData.showcase.Cello.content3,
-                        globalData.showcase.Cello.content4,globalData.showcase.Cello.content5];
+                        globalData.showcase.Cello.content4,globalData.showcase.Cello.content5,
+                        globalData.showcase.Cello.pathbg1];
                     }break;
                 case (btn[3]):{
                         for (var i = 0; i < 3; i++) {
@@ -64,7 +70,8 @@ var getContent = (id)=>{
                         }
                         obj = [Object.keys(globalData.showcase)[3],globalData.showcase.Guitar.content1,
                         globalData.showcase.Guitar.content2,globalData.showcase.Guitar.content3,
-                        globalData.showcase.Guitar.content4,globalData.showcase.Guitar.content5];
+                        globalData.showcase.Guitar.content4,globalData.showcase.Guitar.content5,
+                        globalData.showcase.Guitar.pathbg1];
                     }break;
                 case (btn[4]):{
                         for (var i = 0; i < 4; i++) {
@@ -73,7 +80,8 @@ var getContent = (id)=>{
                         $(btn[5]).attr('class','nav-link');
                         obj = [Object.keys(globalData.showcase)[4],globalData.showcase.Harmonica.content1,
                         globalData.showcase.Harmonica.content2,globalData.showcase.Harmonica.content3,
-                        globalData.showcase.Harmonica.content4,globalData.showcase.Harmonica.content5];
+                        globalData.showcase.Harmonica.content4,globalData.showcase.Harmonica.content5,
+                        globalData.showcase.Harmonica.pathbg1];
                     }break;
                 case (btn[5]):{
                         for (var i = 0; i < 5; i++) {
@@ -81,7 +89,8 @@ var getContent = (id)=>{
                         }
                         obj = [Object.keys(globalData.showcase)[5],globalData.showcase.Saxophone.content1,
                         globalData.showcase.Saxophone.content2,globalData.showcase.Saxophone.content3,
-                        globalData.showcase.Saxophone.content4,globalData.showcase.Piano.content5];
+                        globalData.showcase.Saxophone.content4,globalData.showcase.Piano.content5,
+                        globalData.showcase.Saxophone.pathbg1];
                     }break;
                 case (btn[6]):{
                         for (var i = 0; i < 6; i++) {
@@ -96,6 +105,7 @@ var getContent = (id)=>{
 
 var changeName = (obj) => {
     $('#name-ins').html('<h1  class="wow fadeInUp">'+obj[0]+'</h1>');
+    $('#pic1').attr('style','background-image: url('+obj[6]+');transition: 0.5s');
     $('#content-1').html('<p  class="wow fadeInUp">'+obj[1]+'</span>');
     $('#content-1').append('<p  class="wow fadeInUp">'+obj[2]+'</span>');
     $('#content-2').html('<p class="wow fadeInUp">' + obj[3] + '</p>'+

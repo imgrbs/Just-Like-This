@@ -9,7 +9,9 @@
 
             "content4":"Keybed : Made form planks of quarter-sawn spruce.Horizoneal and vertical birch planks present a vented system for humidity escapement.Crowned and reverse-crowned action frame gives a snug fit, intensifies key movement and prevents “slapping” during heavy playing. Large maple dowel ends provide a solid mount for adjustable brass touch-regulating screws. Thickness: 1 ¾” (4.45 cm).",
 
-            "content5":"Pedals : Heavy, slid brass. Soft, sustaining, and full sostenuto"
+            "content5":"Pedals : Heavy, slid brass. Soft, sustaining, and full sostenuto",
+
+            "pathbg1" : "assets/images/piano/steinway-concept.jpg"
         },
         "Violin" : {
             "content1":"aaaaa",
@@ -20,7 +22,9 @@
             
             "content4":"aaaaa",
             
-            "content5":"aaaaa"
+            "content5":"aaaaa",
+
+            "pathbg1" : "assets/images/violin/violin-bg-peel.jpg"
         },
         "Cello" : {
             "content1":"aaaaa",
@@ -31,7 +35,9 @@
             
             "content4":"aaaaa",
             
-            "content5":"aaaaa"
+            "content5":"aaaaa",
+
+            "pathbg1" : "assets/images/piano/steinway-concept.jpg"
         },
         "Guitar" : {
             "content1":"aaaaa",
@@ -42,7 +48,9 @@
             
             "content4":"aaaaa",
             
-            "content5":"aaaaa"
+            "content5":"aaaaa",
+
+            "pathbg1" : "assets/images/piano/steinway-concept.jpg"
         },
         "Harmonica" : {
             "content1":"aaaaa",
@@ -53,7 +61,9 @@
             
             "content4":"aaaaa",
             
-            "content5":"aaaaa"
+            "content5":"aaaaa",
+
+            "pathbg1" : "assets/images/piano/steinway-concept.jpg"
         },
         "Saxophone" : {
             "content1":"aaaaa",
@@ -64,7 +74,9 @@
             
             "content4":"aaaaa",
             
-            "content5":"aaaaa"
+            "content5":"aaaaa",
+
+            "pathbg1" : "assets/images/piano/steinway-concept.jpg"
         }
     }
 }
