@@ -31,6 +31,7 @@ nav{
 }
 #content1{
     min-height: 40vh;
+    height: auto;
 }
 #pic2{
     padding: 5em 3em;
@@ -42,11 +43,14 @@ nav{
 }
 #content2{
     min-height: 40vh;
+    height: auto;
 }
 .content{
     padding: 2em 3em;
 }
-
+#content1,#content2{
+    padding: 5em 15em;    
+}
 li a {
     cursor: pointer;
     transition: 0.5s;
@@ -79,7 +83,7 @@ li a {
 
 @media only screen 
 and (min-width:0px)
-and (max-width:736px){
+and (max-width:990px){
     .navbar-nav{
         margin-top: 5px;
         padding: 1em;
