@@ -11,7 +11,12 @@
 
             "content5":"Pedals : Heavy, slid brass. Soft, sustaining, and full sostenuto",
 
-            "pathbg1" : "assets/images/piano/steinway-concept.jpg"
+            "pathbg1" : "assets/images/piano/steinway-concept.jpg",
+            
+            "pathbg2" : "assets/images/piano/steinway-piano2.jpg",
+            
+            "pathbg3" : "assets/images/piano/SteinwayLogo.jpg"
+
         },
         "Violin" : {
             "content1":"aaaaa",
@@ -24,7 +29,11 @@
             
             "content5":"aaaaa",
 
-            "pathbg1" : "assets/images/violin/violin-bg-peel.jpg"
+            "pathbg1" : "assets/images/violin/violin-bg-peel.jpg",
+            
+            "pathbg2" : "assets/images/violin/violin-bg-peel2.jpg",
+            
+            "pathbg3" : "assets/images/violin/violin-bg-peel3.jpg"
         },
         "Cello" : {
             "content1":"aaaaa",
@@ -37,7 +46,11 @@
             
             "content5":"aaaaa",
 
-            "pathbg1" : "assets/images/piano/steinway-concept.jpg"
+            "pathbg1" : "assets/images/cello/pic1.png",
+            
+            "pathbg2" : "assets/images/cello/pic2.png",
+            
+            "pathbg3" : "assets/images/cello/footer.png"
         },
         "Guitar" : {
             "content1":"aaaaa",
@@ -50,7 +63,11 @@
             
             "content5":"aaaaa",
 
-            "pathbg1" : "assets/images/piano/steinway-concept.jpg"
+            "pathbg1" : "assets/images/guitar/pic1.png",
+
+            "pathbg2" : "assets/images/guitar/pic2.png",
+            
+            "pathbg3" : "assets/images/guitar/footer.jpg"
         },
         "Harmonica" : {
             "content1":"aaaaa",
@@ -63,7 +80,11 @@
             
             "content5":"aaaaa",
 
-            "pathbg1" : "assets/images/piano/steinway-concept.jpg"
+            "pathbg1" : "assets/images/harmonica/pic1.png",
+
+            "pathbg2" : "assets/images/harmonica/pic2.png",
+            
+            "pathbg3" : "assets/images/harmonica/footer.png"
         },
         "Saxophone" : {
             "content1":"aaaaa",
@@ -76,7 +97,11 @@
             
             "content5":"aaaaa",
 
-            "pathbg1" : "assets/images/piano/steinway-concept.jpg"
+            "pathbg1" : "assets/images/piano/steinway-concept.jpg",
+            
+            "pathbg2" : "assets/images/piano/steinway-piano2.jpg",
+            
+            "pathbg3" : "assets/images/piano/SteinwayLogo.jpg"
         }
     }
 }
