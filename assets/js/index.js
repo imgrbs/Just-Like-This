@@ -183,10 +183,10 @@ var changeName = (obj) => {
     $('#pic2').attr('style','background-image: url('+obj[7]+');transition: 0.5s');
     $('#footer').attr('style','background-image: url('+obj[8]+');transition: 0.5s');
     $('#name-ins').html('<h1  class="wow fadeInUp">'+obj[0]+'</h1>');
-    $('#content-1').html('<p  class="wow fadeInUp">'+obj[1]+'</span>');
-    $('#content-1').append('<p  class="wow fadeInUp">'+obj[2]+'</span>');
-    $('#content-2').html('<div class="wow fadeInUp">' + obj[3] + '</div>'+
-                        '<div class="wow fadeInUp">' + obj[4] + '</div>');    
+    $('#content-1').html('<p  class="wow fadeInUp">'+obj[1]+'</p>');
+    $('#description').html('<div class="wow fadeInUp col-12"><p class="">'+obj[2]+'</p></div>');
+    $('#content-2').html('<div class="wow fadeInUp col-xs-12 offset-xs-0 col-md-6 offset-md-0 text-center">' + '<img src="'+ 'http://cp.lnwfile.com/unv2hf.jpg' + '" class="rounded-circle" alt="itempicture" style="width:50%" /><br><p class="text-left">' + obj[3] + '</p></div>'+
+                        '<div class="wow fadeInUp col-xs-12  offset-xs-0 col-md-6 offset-md-0 text-center">' + '<img src="'+ 'http://cp.lnwfile.com/unv2hf.jpg' + '" class="rounded-circle" alt="itempicture" style="width:50%" /><br><p class="text-left">' + obj[4] + '</p></div>');    
 }
 
 var getLists = () => {
