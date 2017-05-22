@@ -6,7 +6,7 @@
     font-family: 'SF' !important;
 }
 body{
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
     margin: 0;
 }
 nav{
@@ -24,7 +24,7 @@ nav{
 }
 #pic1{
     padding-top: 2em; 
-    background-color: rgba(255, 255, 255, 0.5);
+    /*background-color: rgba(255, 255, 255, 0.5);*/
     background-image: url('../images/piano/steinway-concept.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -32,13 +32,24 @@ nav{
     background-position-y: 0%;
     min-height: 95vh;
 }
+.pic1edited{
+    padding-top: 0.5em !important; 
+    min-height: 10vh !important;   
+}
+.footeredited{
+    padding: 3em !important; 
+    min-height: 10vh !important;   
+}
+.forDisplayNone{
+    display: none !important;
+}
 #content1{
     min-height: 40vh;
     height: auto;
 }
 #pic2{
     padding: 5em 3em;
-    background-color: rgba(255, 255, 255, 0.5);
+    /*background-color: rgba(255, 255, 255, 0.5);*/
     background-image: url('../images/piano/steinway-piano2.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -102,9 +113,74 @@ li a {
     font-size: 20px;
 }
 
+#itemlist{
+    display: none;
+    min-height: 30em;
+}
+
+#itemmenu{
+    display: none;
+    background-color: #fff;
+}
+
+#pianoprodbtn ,
+#celloprodbtn ,
+#violinprodbtn ,
+#guitarprodbtn ,
+#harmoprodbtn ,
+#saxoprodbtn {
+    cursor: pointer;
+    padding: 0.5em 0em;
+    transition: 0.5s;
+}
+
+#pianoprodbtn:hover ,
+#celloprodbtn:hover ,
+#violinprodbtn:hover ,
+#guitarprodbtn:hover ,
+#harmoprodbtn:hover ,
+#saxoprodbtn:hover {
+    color: #969696;
+}
+
+#itempiano ,
+#itemviolin ,
+#itemcello ,
+#itemguitar ,
+#itemharmo ,
+#itemsaxo {
+    padding: 2em 0;
+}
+
+#itempiano h1,
+#itemviolin h1,
+#itemcello h1,
+#itemguitar h1,
+#itemharmo h1,
+#itemsaxo h1{
+    margin: 1em 0;
+}
+
+.showall{
+    margin: 1em 0em;
+}
+.showall span{
+    cursor: pointer;
+}
+
+@media only screen 
+and (min-width:0px)
+and (max-width:320px){
+    .bg-promo {
+        min-width: 310px;
+    }
+}
 @media only screen 
 and (min-width:0px)
 and (max-width:990px){
+    .card{
+        margin: 0.5em 0em;
+    }
     .navbar-nav{
         margin-top: 5px;
         padding: 1em;
@@ -116,11 +192,22 @@ and (max-width:990px){
     #content-1 p {
         font-size: 20px;
     }
+    /*.navbar-light .navbar-toggler-icon {
+        filter: invert(100%);
+    }
+    .navbar-nav {
+        margin-top: 5px;
+        padding: 1em;
+        background-color: rgb(23, 23, 23);
+    }*/
 }
 
 @media only screen 
 and (min-width:1366px){
     #content1,#content2{
         padding: 5em 15em;    
-    }   
+    }
+    /*.navbar-light .navbar-toggler-icon {
+        filter: invert(0%);
+    }*/
 }

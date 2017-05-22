@@ -97,11 +97,11 @@
             
             "content5":"aaaaa",
 
-            "pathbg1" : "assets/images/piano/steinway-concept.jpg",
+            "pathbg1" : "assets/images/saxophone/pic1.png",
             
-            "pathbg2" : "assets/images/piano/steinway-piano2.jpg",
+            "pathbg2" : "assets/images/saxophone/pic2.png",
             
-            "pathbg3" : "assets/images/piano/SteinwayLogo.jpg"
+            "pathbg3" : "assets/images/saxophone/footer.jpg"
         }
     }
 }

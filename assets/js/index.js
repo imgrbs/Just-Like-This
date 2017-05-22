@@ -3,14 +3,22 @@ new WOW().init();
 var btn = ['#piano-btn','#violin-btn','#cello-btn',
         '#guitar-btn','#harmo-btn','#saxo-btn','#prod-btn'];
 
+var items = [$('#pianoprodbtn'),$('#violinprodbtn'),$('#celloprodbtn'),
+            $('#guitarprodbtn'),$('#harmoprodbtn'),$('#saxoprodbtn')];
+
+var itemsblock = [$('#itempiano'),$('#itemviolin'),$('#itemcello'),
+            $('#itemguitar'),$('#itemharmo'),$('#itemsaxo')];
+
 $(document).ready(function(){
     getOnStart()
     for (var i = 0; i < btn.length; i++) {
         getContent(btn[i])
     }
+
 })
 
 var globalData;
+var itemData;
 
 var getOnStart = () =>{
     $.getJSON('./assets/json/showcase/data.json', function(data) {
@@ -23,6 +31,7 @@ var getOnStart = () =>{
         globalData.showcase.Piano.pathbg3];    
         changeName(obj)
     });
+    
 }
 
 var getContent = (id)=>{
@@ -102,12 +111,15 @@ var getContent = (id)=>{
                         for (var i = 0; i < 6; i++) {
                             $(btn[i]).attr('class','nav-link');
                         }
+                        obj = ['Products','Products','Products','Products',
+                        'Products','Products','Products','Products',
+                        'Products']
                         console.log("products")
                     }break;
             }
-            if(id==btn[1]||id==btn[2]||id==btn[4]) {
+            if(id==btn[1]||id==btn[2]||id==btn[4]||id==btn[3]) {
                 $('.navbar-brand').attr('style','color:white;transition:1s;');
-                if(window.innerWidth>990){
+                if(window.innerWidth>992){
                     $('.navbar-brand').attr('style','color:white;transition:0.7s;');
                     $('.nav-link').attr('style','color:white;transition:1s;');
                     $('#prod-btn').attr('onMouseOver','this.style.color="#fff"');
@@ -118,6 +130,48 @@ var getContent = (id)=>{
                 $('.nav-link').attr('style','color:black;transition:1s;');
                 $('#prod-btn').attr('onMouseOver','this.style.color="#fff"');
                 $('#prod-btn').attr('onMouseOut','this.style.color="#000"');
+            }
+            if(id==btn[6]){
+                getLists()
+
+                listsForShop()
+
+                if(window.innerWidth<=992){
+                    $('.navbar-toggler-icon').attr('style','filter:invert(100%)');
+                    $('.navbar-nav').attr('style','background-color:rgba(25, 25, 25, 0.5);');
+                }else{
+                    $('.navbar-toggler-icon').attr('style','filter:invert(0%)');
+                    $('.navbar-nav').attr('style','');
+                }
+                $('#piccontent1').fadeOut(300);
+                $('#content1').fadeOut(100);
+                $('#pic2').fadeOut(100);
+                $('#pic2').addClass('forDisplayNone');
+                $('#content2').fadeOut(100);
+                $('#pic1').addClass('pic1edited');
+                $('body').attr('style','background-color:black');
+                $('.navbar-brand').attr('style','color:white;transition:0.7s;');
+                $('.nav-link').attr('style','color:white;');
+                $('#itemmenu').fadeIn(1000);
+                $('#itemlist').fadeIn(1000);
+                $('#prod-btn').attr('style','background-color:white;');
+                $('#prod-btn').attr('onMouseOver','this.style.color="#fff";this.style.backgroundColor="rgba(25, 25, 25, 0.8)"');
+                $('#prod-btn').attr('onMouseOut','this.style.color="#000";this.style.backgroundColor="#fff"');
+                $('#footer').addClass('footeredited');
+                
+            }else{
+                $('.navbar-toggler-icon').attr('style','filter:invert(0%)');
+                $('.navbar-nav').attr('style','');
+                $('#piccontent1').fadeIn(1000);
+                $('#content1').fadeIn(1000);
+                $('#pic2').removeClass('forDisplayNone');
+                $('#pic2').fadeIn(1000);
+                $('#content2').fadeIn(1000);
+                $('#itemlist').fadeOut(600);
+                $('#itemmenu').fadeOut(600);
+                $('#pic1').removeClass('pic1edited');
+                $('nav').attr('style','color:black;');
+                $('#footer').removeClass('footeredited');
             }
             
             changeName(obj)
@@ -133,4 +187,77 @@ var changeName = (obj) => {
     $('#content-1').append('<p  class="wow fadeInUp">'+obj[2]+'</span>');
     $('#content-2').html('<div class="wow fadeInUp">' + obj[3] + '</div>'+
                         '<div class="wow fadeInUp">' + obj[4] + '</div>');    
+}
+
+var getLists = () => {
+    // $.getJSON('./assets/json/lists/lists.json', function(data) {
+    // // $.getJSON('https://dev.taehub.me/muchwow/assets/json/showcase/lists.json', function(data) {
+    //     itemData = data;
+    //     var obj = [Object.keys(itemData.showcase)[0],itemData.showcase.Piano.content1,
+    //     itemData.showcase.Piano.content2,itemData.showcase.Piano.content3,
+    //     itemData.showcase.Piano.content4,itemData.showcase.Piano.content5,
+    //     itemData.showcase.Piano.pathbg1,itemData.showcase.Piano.pathbg2,
+    //     itemData.showcase.Piano.pathbg3];    
+    //     changeName(obj)
+    // });
+}
+
+var listsForShop = () => {
+    
+    $('.showall').click(()=>{
+        for (var i = 0; i < items.length; i++) {
+            itemsblock[i].fadeIn(100);
+        }
+    })
+
+    items[0].click(()=>{
+        itemsblock[0].fadeIn(100);
+        for (var i = 1; i < items.length; i++) {
+            itemsblock[i].fadeOut(100);
+        }
+    })
+
+    items[1].click(()=>{
+        itemsblock[1].fadeIn(100);
+        itemsblock[0].fadeOut(100);
+        for (var i = 2; i < items.length; i++) {
+            itemsblock[i].fadeOut(100);
+        }
+    })
+    
+    items[2].click(()=>{
+        itemsblock[2].fadeIn(100);
+        itemsblock[0].fadeOut(100);
+        itemsblock[1].fadeOut(100);
+        for (var i = 3; i < items.length; i++) {
+            itemsblock[i].fadeOut(100);
+        }
+    })
+
+    items[3].click(()=>{
+        itemsblock[3].fadeIn(100);
+        for (var i = 0; i < 3; i++) {
+            itemsblock[i].fadeOut(100);
+        }
+        for (var i = 4; i < items.length; i++) {
+            itemsblock[i].fadeOut(100);
+        }
+    })
+
+    items[4].click(()=>{
+        itemsblock[4].fadeIn(100);
+        for (var i = 0; i < 4; i++) {
+            itemsblock[i].fadeOut(100);
+        }
+        for (var i = 5; i < items.length; i++) {
+            itemsblock[i].fadeOut(100);
+        }
+    })
+
+    items[5].click(()=>{
+        itemsblock[5].fadeIn(100);
+        for (var i = 0; i < 5; i++) {
+            itemsblock[i].fadeOut(100);
+        }
+    })
 }
