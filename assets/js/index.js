@@ -143,7 +143,7 @@ var getContent = (id)=>{
                     $('.navbar-toggler-icon').attr('style','filter:invert(0%)');
                     $('.navbar-nav').attr('style','');
                 }
-                $('#piccontent1').fadeOut(300);
+                $('#piccontent1').fadeOut(100);
                 $('#content1').fadeOut(100);
                 $('#pic2').fadeOut(100);
                 $('#pic2').addClass('forDisplayNone');

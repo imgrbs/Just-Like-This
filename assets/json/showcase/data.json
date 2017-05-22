@@ -46,11 +46,11 @@
             
             "content5":"aaaaa",
 
-            "pathbg1" : "assets/images/cello/pic1.png",
+            "pathbg1" : "assets/images/cello/pic1.jpg",
             
-            "pathbg2" : "assets/images/cello/pic2.png",
+            "pathbg2" : "assets/images/cello/pic2.jpg",
             
-            "pathbg3" : "assets/images/cello/footer.png"
+            "pathbg3" : "assets/images/cello/footer.jpg"
         },
         "Guitar" : {
             "content1":"aaaaa",
@@ -63,9 +63,9 @@
             
             "content5":"aaaaa",
 
-            "pathbg1" : "assets/images/guitar/pic1.png",
+            "pathbg1" : "assets/images/guitar/pic1.jpg",
 
-            "pathbg2" : "assets/images/guitar/pic2.png",
+            "pathbg2" : "assets/images/guitar/pic2.jpg",
             
             "pathbg3" : "assets/images/guitar/footer.jpg"
         },
@@ -80,11 +80,11 @@
             
             "content5":"aaaaa",
 
-            "pathbg1" : "assets/images/harmonica/pic1.png",
+            "pathbg1" : "assets/images/harmonica/pic1.jpg",
 
-            "pathbg2" : "assets/images/harmonica/pic2.png",
+            "pathbg2" : "assets/images/harmonica/pic2.jpg",
             
-            "pathbg3" : "assets/images/harmonica/footer.png"
+            "pathbg3" : "assets/images/harmonica/footer.jpg"
         },
         "Saxophone" : {
             "content1":"aaaaa",
@@ -97,9 +97,9 @@
             
             "content5":"aaaaa",
 
-            "pathbg1" : "assets/images/saxophone/pic1.png",
+            "pathbg1" : "assets/images/saxophone/pic1.jpg",
             
-            "pathbg2" : "assets/images/saxophone/pic2.png",
+            "pathbg2" : "assets/images/saxophone/pic2.jpg",
             
             "pathbg3" : "assets/images/saxophone/footer.jpg"
         }
