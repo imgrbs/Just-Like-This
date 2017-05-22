@@ -1,0 +1,84 @@
+{
+    "root": {
+        "piano": {
+            "piano Steinway & sons spirio": {
+                "description": "Measuring 227 cm in length, this concert grand offers a large variety of sound and touch from soft piano to strong forte, from clear treble to deep bass.",
+                "price": "78,890",
+                "pathpic": "assets/images/piano/"
+            }
+        },
+        "violin": {
+            "Streich Werk,Violin": {
+                "description": "Master luthier violin of the highest quality based on Guarneri del Gesú. The sound of this Instrument is bride, brilliant and exceptionally capable of modulation. 50 years old dried european tonewood. Beautifully flamed maple back in one piece – top piece made of selected european spruce. Premium oil-varnish with antique look by our master luthier.          Size: 4/4 ",
+                "price": "4,300",
+                "pathpic": "assets/images/violin/"
+            },
+           "Stradivarius": {
+                "description": "Antonius Stradivarius Cremonensis / Facie- bat Anno 1736\"; the last three digits of the date are handwritten; and another label in manuscript: \"D'Anni 92\" Size:3/4",
+                "price": "7,558 ",
+                "pathpic": "assets/images/violin/"
+            },
+            " Bellissima \"Felisa\" Violin": {
+                "description": "Strad model violin in stunning antiqued oil varnish in golden hues. Standard ebony fittings, 2-piece back, fine Canadian setup and Dominant strings. Read Customer Testimonials      Size:4/4",
+                "price": "1,250",
+                "pathpic": "assets/images/violin/"
+            }
+        },
+        "guitar": {
+            "Alvarez Artist Series AD60-12 Dreadnought": {
+                "description": "The Alvarez Artist Series AD60-12 Dreadnought Twelve String Acoustic Guitar model is the 12-string version of the best-selling AD60 and sounds incredible. The AD60-12 is a member of the Alvarez Artist '60 Series. Alvarez was careful to get the construction just right to allow this series to sing, and deliver a player experience that's exceptional for a mid price instrument. Feature: 12 String Dreadnought Acoustic Guitar Hand selected, ˜A' grade, solid Sitka spruce top Hand sanded, scalloped bracing Mahogany back and sides Alvarez bi-level rosewood bridge Rosewood fingerboard Premium, high gloss finish Dovetail neck joint Real bone nut and saddle Paua abalone and mother of pearl inlays Premium die cast chrome tuners ABS binding D'Addario EXP's Case sold separately.",
+                "price": "13,277",
+                "pathpic": "assets/images/guitar/"
+            },
+            " Blueridge Contemporary Series BR-40-12 ": {
+                "description": "The Blueridge BR-40-21 12-string acoustic guitar is here! With a solid spruce top and mahogany back and sides, the BR-40-12 delivers all the tone and volume any player will need. The solid Sitka spruce top is dynamic and powerful; meanwhile the mahogany back and sides offer extraordinary texture. The perfectly proportioned mahogany neck has an adjustable truss rod for perfect alignment and ease of play. The large, jumbo-inspired body guarantees the ideal 12-string tone character. Features Solid Sitka spruce top Mahogany back and sides Hand-carved parabolic top braces in authentic prewar forward X-pattern Black body binding with white-black-white purfling Natural high-gloss finish Slim mahogany neck with dovetail neck joint and adjustable truss rod Rosewood bridge and bridge plate Rosewood peghead overlay with a unique mother-of-pearl and abalone design Black pickguard 14:1 ratio vintage-style, 6-in-a-line closed-back tuners with round buttons for exceptional tuning accuracy and instrument balance Bone nut and saddle Nut width: 1 7/8 inch Scale length: 25.6 inch Shop Adjusted",
+                "price": "18,011",
+                "pathpic": "assets/images/guitar/"
+            },
+            "Blueridge BR-140A Craftsman Series Dreadnought Acoustic Guitar  Natural"{
+                "description": "The Blueridge BR-140A dreadnought acoustic guitar from the Historic Series has a select and rare, solid Adirondack spruce top with hand-carved parabolic top braces in an authentic prewar forward \"X\" pattern. The Blueridge guitar also boasts choice solid mahogany sides and back, a natural high-gloss finish with a lightly toned top, and a slim, adjustable mahogany neck with a dovetail neck joint. Features Select and rare, solid Adirondack spruce top with hand-carved parabolic top braces in authentic prewar forward X-pattern Choice solid mahogany sides and back Natural high-gloss finish with a lightly toned top Slim mahogany neck has adjustable truss rod and dovetail neck/body joint East Indian rosewood fingerboard, bridge Maple bridge plate Saga's exclusive Dalmatian tortoise pickguard B/W/B plastic binding with fine black and white purfling on soundboard Nut and saddle are made from bone Rosewood peghead overlay adorned with a unique mother-of-pearl and abalone design Accurate vintage-style 14:1 ratio nickel-plated open-back tuners with butterbean-style buttons Nut width: 1-3/4\" Scale length: 25.6\" (650mm) Shop adjusted Case sold separately",
+                "price": "29,606",
+                "pathpic": "assets/images/guitar/"
+            }
+        },
+        "cello": {
+            "Bellafina Overture Series Cello Outfit  4/4 Size ": {
+                "description": "Quality cello outfit with premium solid spruce and maple, with an ebony fingerboard. The Bellafina Overture Cello is designed as the perfect instrument for students graduating from a smaller size to a full-size instrument. The Overture cellos are of a high quality, created from premium solid spruce and maple. Bellafina luthiers add an ebony fingerboard, composite tailpiece and a select French maple bridge. Each Bellafina instrument is set up in the USA to MENC specifications, which means that your instrument will sound great and play well as soon as you take it out and tune it to pitch. FEATURES Top: Select solid spruce Back and Sides: Select solid maple Neck: Maple/oil finish Fingerboard: Ebony Fittings: Ebony Tailpiece: Composite Bridge: Maple Finish: Reddish Brown Bow: Upgraded octagonal bow, premium Brazilwood, optimal grain density Case/Bag: Bag with 10mm padding Strings: D'Addario Helicore Sizes: 4/4-Size",
+                "price": "48,111",
+                "pathpic": "assets/images/cello/"
+            },
+            " VC5S Quarter Size (¼) Cello Outfit": {
+                "description":"VC5S Quarter Size (¼) Cello Outfit Overview Perfect for the Beginning Cellist The VC5S cello offers the same warm sound and excellent value as the V5 violins. They are made of high quality materials and are individually hand finished by caring craftspeople. Each instrument is hand sculpted by the same traditional methods as used on high-end string instruments. They are quality instruments that can inspire the musical future of students. Specs Colour/Finish Body Finish : Hand Brushed Varnish : oil Varnish Body Type: Stradivarius Size :1/4 Top :Spruce Back :Maple Side :Maple Neck :Maple Finger Board: Ebony ",
+                "price":"1,006",
+                "pathpic":"assets/images/cello/"
+            },
+            "VC5S Three-Quarter Size (¾) Cello Outfit":{
+                "description":"Perfect for the Beginning Cellist The VC5S cello offers the same warm sound and excellent value as the V5 violins. They are made of high quality materials and are individually hand finished by caring craftspeople. Each instrument is hand sculpted by the same traditional methods as used on high-end string instruments. They are quality instruments that can inspire the musical future of students. Colour/Finish Body Finish :Fully Hand Brushed Varnish: Oil Varnish, Shading Body Type: Stradivarius Size:3/4 Top:Spruce Back:Maple Side:Maple Neck:Maple Finger Board:Ebony",
+                "price":"2,999.99",
+                "pathpic":"assets/images/cello"
+            },
+            "VC20G Full Size (4/4) Cello":{
+                "description":"The VC20G is a intermediate cello for advanced students which creates a great bright and clear sound. The wood has been carefully seasoned and selected, finished by with hand brushed oil varnish.Spacs Colour/Finish Body Finish: Fully Hand Brushed Varnish: Oil Varnish, Shading Body Type:Stradivarius Size: 4/4 Top: Spruce Back: Maple Side: Maple Neck: Maple Finger Board: Ebony",
+                "price":,"4,683",
+                "pathpic":"assets/images/cello"
+            }
+        },
+        "saxophone"{
+            "Allora Vienna Series Intermediate Semi-Curved Soprano Saxophone  AASS-501 – Lacquer":{
+                "description":"A value priced intermediate sax.The Allora Vienna Series Saxophones are a great value for schools on a budget as well as individuals looking for an affordable step-up instrument. With these players in mind, the Vienna saxes have done an excellent job of combining features that enhance the sound with features that enhance durability. The result is a line of saxophones that can provide years of service to a wide range of players. The Vienna saxophones are the solution many have been looking for.The Vienna Series Semi-Curved Soprano Saxophone has a sound that is warmer than what is found on a straight soprano, yet has better projection than a curved sax. Comes with deluxe black case.FEATURES Two necks, one straight, one curved Lacquer finish Range to High G Pisoni Pads An affordable sax for the serious student.SPECIFICATIONS Vienna Series Intermediate Semi-Curved Soprano Saxophone Level: Intermediate Key: Bb Neck Material: Yellow brass Body Material: Yellow brass Bell Material: Yellow brass Range: High G Pads: Pisoni pads Includes: Deluxe black case Crafted in Taiwan",
+                "price":"37,008",
+                "pathpic":"assets/images/saxophone"
+            },
+            "Allora Chicago Jazz Tenor Saxophone  AATS-954 - Dark Gold Lacquer":{
+                "description":"A pro quality tenor with sultry tone and smooth action.The Chicago Jazz Tenor Saxophone is a pro quality horn that features ribbed construction, Pisoni pads, floral engraving on bell and bow, G brace, with high F# note, double arms on low C, B, Bb, and an 85% red brass body with a champagne finish. Includes a PSB carrying case.Every Allora saxophone is subjected to an exclusive play test and shop check to ensure you of a great playing horn.FEATURES: Rib construction 85% red brass body Champagne finish Rolled tone hole Big bell High F# note Double arms on low C, B, Bb G brace Pisoni pads With flowers engraved on the bow & bell  Includes PSB case",
+                "price":"62,914",
+                "pathpic":"assets/images/saxophone"
+            },
+            "Allora Vienna Series Intermediate Alto Saxophone  AAAS-505 - Black Nickel Body - Silver Plated Keys":{
+                "description":"A value priced intermediate level horn.The Allora Vienna Series Intermediate Alto Saxophone gives sax players who want to step up a better instrument with reassuring key action, great looks, and the ability to perform just about any kind of music.Allora Vienna Series Saxophones are a great value for both student instrumentalists and school music programs on a budget. As affordable step-up instruments, Allora Vienna saxophones do an excellent job of combining features that enhance the sound with features that enhance durability. The result is that Allora Vienna saxophones provide years of service to a wide range of players. An Allora Vienna Series Intermediate Alto Saxophones could be just the solution you have been looking for.FEATURES Available in lacquer finish or black nickel plate Fully ribbed construction High F# key Perfect for the advancing student.SPECIFICATIONS Vienna Series Intermediate Alto Saxophone Level: Intermediate Key: Eb Neck Material: Yellow brass Body Material: Yellow brass Bell Material: Yellow brass Key Material: Yellow brass Range Up to: High F# Includes: Soft bag Crafted in Vietnam",
+                "price":"29,606",
+                "pathpic":"assets/images/saxophone"
+            }
+        }
+    }
+}

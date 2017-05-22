@@ -3,13 +3,13 @@
         "Piano": {
             "content1":"“Owing to its perfection, the Steinway gives the pianist, wherever he plays, absolute security.”",
             
-            "content2":"Description : Measuring 227 cm in length, this concert grand offers a large variety of sound and touch from soft piano to strong forte, from clear treble to deep bass.",
+            "content2":"Measuring 227 cm in length, this concert grand offers a large variety of sound and touch from soft piano to strong forte, from clear treble to deep bass.",
 
-            "content3":"Keys : European spruce, individually weighed-off. Chip-proof, stain-resistant covering for naturals; slip-proof, adbraded ebonized sharps. Durable Linden Wood buttons reinforce keys overy strike. Longkest : 19” (48.3 cm)",
+            "content3":"European spruce, individually weighed-off. Chip-proof, stain-resistant covering for naturals; slip-proof, adbraded ebonized sharps. Durable Linden Wood buttons reinforce keys overy strike. Longkest : 19” (48.3 cm)",
 
-            "content4":"Keybed : Made form planks of quarter-sawn spruce.Horizoneal and vertical birch planks present a vented system for humidity escapement.Crowned and reverse-crowned action frame gives a snug fit, intensifies key movement and prevents “slapping” during heavy playing. Large maple dowel ends provide a solid mount for adjustable brass touch-regulating screws. Thickness: 1 ¾” (4.45 cm).",
+            "content4":"Made form planks of quarter-sawn spruce.Horizoneal and vertical birch planks present a vented system for humidity escapement.Crowned and reverse-crowned action frame gives a snug fit, intensifies key movement and prevents “slapping” during heavy playing. Large maple dowel ends provide a solid mount for adjustable brass touch-regulating screws. Thickness: 1 ¾” (4.45 cm).",
 
-            "content5":"Pedals : Heavy, slid brass. Soft, sustaining, and full sostenuto",
+            "content5":"Heavy, slid brass. Soft, sustaining, and full sostenuto",
 
             "pathbg1" : "assets/images/piano/steinway-concept.jpg",
             
@@ -19,11 +19,11 @@
 
         },
         "Violin" : {
-            "content1":"aaaaa",
+            "content1":"violin , the smallest member of the string instruments",
 
-            "content2":"aaaaa",
+            "content2":"The violin is the smallest member of the string family. Sound is produced by drawing the bow across one of the four strings or by plucking the string with a finger. All string instruments produce sound in the same manner. The main differences are the sizes of the instruments and how high or low each instrument can sound.",
             
-            "content3":"aaaaa",
+            "content3":"The violin is a very popular instrument for beginners. Since lots of other students will choose the violin, there will be more competition with other players. However, the violin is one of the most widely used instruments in the world. It is well known for its use in symphony orchestras as well as country and bluegrass bands and other popular groups. The violin is also extremely popular as a solo instrument.",
             
             "content4":"aaaaa",
             
@@ -36,9 +36,9 @@
             "pathbg3" : "assets/images/violin/violin-bg-peel3.jpg"
         },
         "Cello" : {
-            "content1":"aaaaa",
+            "content1":"When I started learning the cello, I fell in love with the instrument because it seemed like a voice - my voice.",
 
-            "content2":"aaaaa",
+            "content2":"The cello is actually part of the violin family, which came into prominent use in the eighteenth century. There are several differences between instruments in the viol family and violin family. Viols have flat backs while members of the violin family have curved backs. Viols have c holes rather than f holes and six strings instead of four strings. ",
             
             "content3":"aaaaa",
             
