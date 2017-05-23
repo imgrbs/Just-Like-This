@@ -160,7 +160,7 @@ li a {
 #itemguitar ,
 #itemharmo ,
 #itemsaxo {
-    padding: 2em 0;
+    padding: 0em 0;
 }
 
 #itempiano h1,
@@ -190,6 +190,25 @@ li a {
 .btn{
     min-width: 112.72px;
 }
+.cart{
+    width:30px;
+    height: 30px;
+    position: absolute;
+    top: 15;
+    right: -50;
+    display: none;
+}
+#valueitem{
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    top: 15;
+    right: -15px;
+    background-color: #FFD42A;
+    padding: 0.1em 0.5em;
+    border-radius: 50%;
+    display: none;
+}
 
 @media only screen 
 and (min-width:0px)
@@ -198,6 +217,7 @@ and (max-width:320px){
         min-width: 310px;
     }
 }
+
 @media only screen 
 and (min-width:0px)
 and (max-width:990px){

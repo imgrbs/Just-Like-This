@@ -1,5 +1,7 @@
 new WOW().init();
 
+
+
 var btn = ['#piano-btn','#violin-btn','#cello-btn',
         '#guitar-btn','#harmo-btn','#saxo-btn','#prod-btn'];
 
@@ -14,11 +16,12 @@ $(document).ready(function(){
     for (var i = 0; i < btn.length; i++) {
         getContent(btn[i])
     }
-
 })
 
 var globalData;
 var itemData;
+
+var globalForCheckProducts = 0;
 
 var getOnStart = () =>{
     $.getJSON('./assets/json/showcase/data.json', function(data) {
@@ -111,6 +114,7 @@ var getContent = (id)=>{
                         for (var i = 0; i < 6; i++) {
                             $(btn[i]).attr('class','nav-link');
                         }
+                        globalForCheckProducts++;
                         obj = ['Products','Products','Products','Products',
                         'Products','Products',globalData.showcase.Saxophone.pathbg1,globalData.showcase.Saxophone.pathbg2,
                         globalData.showcase.Saxophone.pathbg3]
@@ -132,6 +136,8 @@ var getContent = (id)=>{
                 $('#prod-btn').attr('onMouseOut','this.style.color="#000"');
             }
             if(id==btn[6]){
+                $('.cart').fadeIn(1000);
+                $('#valueitem').fadeIn(1000);
                 if(window.innerWidth<=992){
                     $('.navbar-toggler-icon').attr('style','filter:invert(100%)');
                     $('.navbar-nav').attr('style','background-color:rgba(25, 25, 25, 0.5);');
@@ -157,6 +163,7 @@ var getContent = (id)=>{
                 $('#footer').addClass('footeredited');
                 
             }else{
+                globalForCheckProducts = 0;
                 $('.navbar-toggler-icon').attr('style','filter:invert(0%)');
                 $('.navbar-nav').attr('style','');
                 $('#piccontent1').fadeIn(100);
@@ -170,6 +177,9 @@ var getContent = (id)=>{
                 $('nav').attr('style','color:black;');
                 $('#footer').removeClass('footeredited');
                 changeName(obj)
+            
+                $('.cart').fadeOut(100);
+                $('#valueitem').fadeOut(100);
             }
             
     });
@@ -188,52 +198,54 @@ var changeName = (obj) => {
 }
 
 var getLists = () => {
-    $.getJSON('./assets/json/list/lists.json', function(data) {
-    // // $.getJSON('https://dev.taehub.me/muchwow/assets/json/showcase/lists.json', function(data) {
-        itemData = data;
-        piano = [],violin = [],cello = [],guitar = [],harmonica = [],saxophone = [];
-        var arrayObj = [piano,violin,cello,guitar,harmonica,saxophone];
-        for (var key in itemData.root.piano) {
-            var temp = [];
-            temp = [key,itemData.root.piano[key].description,
-            itemData.root.piano[key].price,itemData.root.piano[key].pathpic]
-            piano.push(temp);
-        }
-        for (var key in itemData.root.violin) {
-            var temp = [];
-            temp = [key,itemData.root.violin[key].description,
-            itemData.root.violin[key].price,itemData.root.violin[key].pathpic]
-            violin.push(temp);
-        }
-        for (var key in itemData.root.cello) {
-            var temp = [];
-            temp = [key,itemData.root.cello[key].description,
-            itemData.root.cello[key].price,itemData.root.cello[key].pathpic]
-            cello.push(temp);
-        }
-        for (var key in itemData.root.guitar) {
-            var temp = [];
-            temp = [key,itemData.root.guitar[key].description,
-            itemData.root.guitar[key].price,itemData.root.guitar[key].pathpic]
-            guitar.push(temp);
-        }
-        for (var key in itemData.root.harmonica) {
-            var temp = [];
-            temp = [key,itemData.root.guitar[key].description,
-            itemData.root.guitar[key].price,itemData.root.guitar[key].pathpic]
-            harmonica.push(temp);
-        }
-        for (var key in itemData.root.saxophone) {
-            var temp = [];
-            temp = [key,itemData.root.saxophone[key].description,
-            itemData.root.saxophone[key].price,itemData.root.saxophone[key].pathpic]
-            saxophone.push(temp);
-        }
-    
-        // console.log(arrayObj)
-        listsForShop(arrayObj)
-        
-    });
+    if(globalForCheckProducts==1){
+        $.getJSON('./assets/json/list/lists.json', function(data) {
+            // // $.getJSON('https://dev.taehub.me/muchwow/assets/json/showcase/lists.json', function(data) {
+                itemData = data;
+                piano = [],violin = [],cello = [],guitar = [],harmonica = [],saxophone = [];
+                var arrayObj = [piano,violin,cello,guitar,harmonica,saxophone];
+                for (var key in itemData.root.piano) {
+                    var temp = [];
+                    temp = [key,itemData.root.piano[key].description,
+                    itemData.root.piano[key].price,itemData.root.piano[key].pathpic]
+                    piano.push(temp);
+                }
+                for (var key in itemData.root.violin) {
+                    var temp = [];
+                    temp = [key,itemData.root.violin[key].description,
+                    itemData.root.violin[key].price,itemData.root.violin[key].pathpic]
+                    violin.push(temp);
+                }
+                for (var key in itemData.root.cello) {
+                    var temp = [];
+                    temp = [key,itemData.root.cello[key].description,
+                    itemData.root.cello[key].price,itemData.root.cello[key].pathpic]
+                    cello.push(temp);
+                }
+                for (var key in itemData.root.guitar) {
+                    var temp = [];
+                    temp = [key,itemData.root.guitar[key].description,
+                    itemData.root.guitar[key].price,itemData.root.guitar[key].pathpic]
+                    guitar.push(temp);
+                }
+                for (var key in itemData.root.harmonica) {
+                    var temp = [];
+                    temp = [key,itemData.root.harmonica[key].description,
+                    itemData.root.harmonica[key].price,itemData.root.harmonica[key].pathpic]
+                    harmonica.push(temp);
+                }
+                for (var key in itemData.root.saxophone) {
+                    var temp = [];
+                    temp = [key,itemData.root.saxophone[key].description,
+                    itemData.root.saxophone[key].price,itemData.root.saxophone[key].pathpic]
+                    saxophone.push(temp);
+                }
+            
+                // console.log(arrayObj)
+                listsForShop(arrayObj)
+        });
+    }
+   
 }
 
 var listsForShop = (arr=[]) => {   
@@ -245,15 +257,42 @@ var listsForShop = (arr=[]) => {
             itemsblock[i].fadeIn(100);
         }
     })
+    
     for (var i = 0; i < arr.length; i++) {
+        var tempName = '';
+        switch (i) {
+            case 0:{tempName='piano'}break;
+            case 1:{tempName='violin'}break;
+            case 2:{tempName='cello'}break;
+            case 3:{tempName='guitar'}break;
+            case 4:{tempName='harmonica'}break;
+            case 5:{tempName='saxophone'}break;
+        }
+
+        
+
         for (var j = 0; j < arr[i].length; j++) {
+            var showChar = 100;
+            var tempText;
+            var keepText;
+            if(arr[i][j][1].length>showChar){
+                var tempContent = arr[i][j][1];
+                tempText = tempContent.substr(0,showChar);
+                keepText = tempContent.substr(showChar,tempContent.length - showChar);
+            }
+            var tempNameIns = arr[i][j][0];
+            if(tempNameIns.length>23){
+                tempNameIns = tempNameIns.substr(0,23)+'...';
+            }
             $(idcontent[i]).append(
-                        '<div class="col-xs-12 col-md-4"><div class="card">'+
-                        // '<img class="card-img-top" src="'+arr[0][i][4]+'" alt="Piano-Item'+(i+1)+'">'+
-                        '<div class="card-block"><h4 class="card-title">' + arr[i][j][0] + '</h4>'+
-                        '<p class="card-text">' + arr[i][j][1] + '</p>' + 
-                        '<p class="text-muted"> Price : '+ arr[i][j][2] +' USD. </p>'+
-                        '<div class="text-center"><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div></div>');
+                '<div id="id'+tempName+(j+1)+'" class="col-xs-12 col-md-4"><div class="card">'+
+                '<img class="card-img-top" src="'+arr[i][j][3]+'" alt="Piano-Item'+(i+1)+'">'+
+                '<div class="card-block"><h4 class="card-title">' + tempNameIns + '</h4>'+
+                '<p class="card-text">' + tempText + '<span id=dot"'+ tempName+(j+1) +'">...</span>' + '</p>' + 
+                '<p class="text-muted"> Price : '+ arr[i][j][2] +' USD</p>'+
+                '<div class="text-center"><a id="addCart'+(j+1)+'" href="#" class="btn btn-primary">Add to Cart</a></div></div></div></div>'
+            );
+            
         }
     }
 
@@ -307,4 +346,11 @@ var listsForShop = (arr=[]) => {
             itemsblock[i].fadeOut(100);
         }
     })
+}
+
+var numOfValue = 0;
+
+var addToCart = () => {
+    numOfValue++;
+    $('#valueitem').text(numOfValue);
 }
