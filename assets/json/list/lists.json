@@ -1,10 +1,20 @@
 {
     "root": {
         "piano": {
-            "Piano Steinway & Sons Spirio": {
-                "description": "Measuring 227 cm in length, this concert grand offers a large variety of sound and touch from soft piano to strong forte, from clear treble to deep bass.",
-                "price": "78,890",
+            "Feurich 161 Professional Grand Piano": {
+                "description": "The Feurich Professional I grand piano is a small and solidly built grand piano that can deliver a quality and complete bass tonal range to rival much larger grand pianos.",
+                "price": "18,900",
                 "pathpic": "assets/images/piano/"
+            },
+            "Feurich 218 Professional Grand Piano":{
+                "description":"The first model of the new and innovative FEURICH concert piano series that has been developed in France by Claire et Stephen Paulello and has irresistible clarity.",
+                "price":"17,550",
+                "pathpic":"assets/images/piano"
+            },
+            "Feurich 178 Professional Grand Piano":{
+                "description":"Years of piano making experience Feurich pianos demand for perfection and quality have ensured that the Feurich 178 grand piano is a prize-winning model that reaches the highest European Standards.",
+                "price":"10,400",
+                "pathpic":"assets/images/piano"
             }
         },
         "violin": {
