@@ -1,0 +1,108 @@
+{
+    "root": {
+        "piano": {
+            "Feurich 161 Professional Grand Piano": {
+                "description": "The Feurich Professional I grand piano is a small and solidly built grand piano that can deliver a quality and complete bass tonal range to rival much larger grand pianos.",
+                "price": "18,900",
+                "pathpic": "assets/images/piano/pia-prod-1.jpg"
+            },
+            "Feurich 218 Professional Grand Piano":{
+                "description":"The first model of the new and innovative FEURICH concert piano series that has been developed in France by Claire et Stephen Paulello and has irresistible clarity.",
+                "price":"17,550",
+                "pathpic":"assets/images/piano/pia-prod-2.jpg"
+            },
+            "Feurich 178 Professional Grand Piano":{
+                "description":"Years of piano making experience Feurich pianos demand for perfection and quality have ensured that the Feurich 178 grand piano is a prize-winning model that reaches the highest European Standards.",
+                "price":"10,400",
+                "pathpic":"assets/images/piano/pia-prod-3.jpg"
+            }
+        },
+        "violin": {
+            "Streich Werk,Violin": {
+                "description": "Master luthier violin of the highest quality based on Guarneri del Gesú. The sound of this Instrument is bride, brilliant and exceptionally capable of modulation. Beautifully flamed maple back in one piece ",
+                "price": "4,300",
+                "pathpic": "assets/images/violin/violn-prod-1.jpg"
+            },
+           "Stradivarius": {
+                "description": "\"Antonius Stradivarius Cremonensis / Facie- bat Anno 1736\"; the last three digits of the date are handwritten; and another label in manuscript: \"D'Anni 92\"",
+                "price": "7,558 ",
+                "pathpic": "assets/images/violin/violn-prod-2.jpg"
+            },
+            " Bellissima \"Felisa\" Violin": {
+                "description": "Strad model violin in stunning antiqued oil varnish in golden hues. Standard ebony fittings, 2-piece back, fine Canadian setup and Dominant strings. ",
+                "price": "1,250",
+                "pathpic": "assets/images/violin/violn-prod-3.jpg"
+            }
+        },
+        "guitar": {
+            "Alvarez Artist Series AD60-12 Dreadnought": {
+                "description": "The Alvarez Artist Series AD60-12 Dreadnought Twelve String Acoustic Guitar model is the 12-string version of the best-selling AD60 and sounds incredible.",
+                "price": "390",
+                "pathpic": "assets/images/guitar/gtar-prod-1.jpg"
+            },
+            " Blueridge Contemporary Series BR-40-12 ": {
+                "description": "The Blueridge BR-40-21 12-string acoustic guitar is here! With a solid spruce top and mahogany back and sides, the BR-40-12 delivers all the tone and volume any player will need.",
+                "price": "525",
+                "pathpic": "assets/images/guitar/gtar-prod-2.jpg"
+            },
+            "Blueridge BR-140A Craftsman Series Dreadnought Acoustic Guitar  Natural" : {
+                "description": "The Blueridge BR-140A dreadnought acoustic guitar from the Historic Series has a select and rare, solid Adirondack spruce top with hand-carved parabolic top braces in an authentic prewar forward \"X\" pattern.",
+                "price": "860",
+                "pathpic": "assets/images/guitar/gtar-prod-3.jpg"
+            }
+        },
+        "cello": {
+            "Bellafina Overture Series Cello Outfit  4/4 Size ": {
+                "description": "The Bellafina Overture Cello is designed as the perfect instrument for students graduating from a smaller size to a full-size instrument. ",
+                "price": "1,400",
+                "pathpic": "assets/images/cello/cell-prod-1.jpg"
+            },
+            " VC5S Quarter Size (¼) Cello Outfit": {
+                "description":"The VC5S cello offers the same warm sound and excellent value as the V5 violins. ",
+                "price":"1,006",
+                "pathpic":"assets/images/cello/cell-prod-2.jpg"
+            },
+            "VC20G Full Size (4/4) Cello":{
+                "description":"The VC20G is a intermediate cello for advanced students which creates a great bright and clear sound. The wood has been carefully seasoned and selected, finished by with hand brushed oil varnish.",
+                "price":"4,683",
+                "pathpic":"assets/images/cello/cell-prod-3.jpg"
+            }
+        },
+        "saxophone" : {
+            "Allora Vienna Series Intermediate Semi-Curved ":{
+                "description":"The Allora Vienna Series Saxophones are a great value for schools on a budget as well as individuals looking for an affordable step-up instrument.",
+                "price":"1,075.05",
+                "pathpic":"assets/images/saxophone/sax-prod-1.jpg"
+            },
+            "Allora Chicago Jazz Tenor Saxophone":{
+                "description":"The Chicago Jazz Tenor Saxophone is a pro quality horn that features ribbed construction, Pisoni pads, floral engraving on bell and bow, G brace, with high F# note, double arms on low C, B, Bb, and an 85% red brass body with a champagne finish. Includes a PSB carrying case.",
+                "price":"1,828",
+                "pathpic":"assets/images/saxophone/sax-prod-2.jpg"
+            },
+            "Allora Vienna Series Intermediate Alto Saxophone":{
+                "description":" The Allora Vienna Series Intermediate Alto Saxophone gives sax players who want to step up a better instrument with reassuring key action, great looks, and the ability to perform just about any kind of music.",
+                "price":"880",
+                "pathpic":"assets/images/saxophone/sax-prod-3.jpg"
+            }
+        },
+        "harmonica":{
+            "Hohner 542 Golden Melody Harmonica":{
+                "description":"The Hohner Golden Melody harmonica has an attractive 1950s look thanks to its rounded shape and closed-sided, full-length covers. ",
+                "price":"47.20",
+                "pathpic":"assets/images/harmonica/harmo-prod-1.jpg"
+            },
+            "Hohner 532 Blues Harp MS-Series Harmonica":{
+                "description":"The Hohner 532 Blues Harp Harmonica helps you dig in deep and experience the raw power and grit of the blues. The Blues Harp is engineered for consistent volume and tone that's ideal for intense blues playing.",
+                "price":"36.50",
+                "pathpic":"assets/images/harmonica/harmo-prod-2.jpg"
+            },
+            "Hohner 280/64 Chromonica 64 Chromatic Harmonica":{
+                "description":"Hohner Chromonica 280/64 Harmonica is the one played by Stevie Wonder and the standard by which all chromatic harps are judged. Providing sweet sounding tone and reliable performance.",
+                "price":"311.70",
+                "pathpic":"assets/images/harmonica/harmo-prod-3.jpg"
+            }
+           
+
+        }
+    }
+}
