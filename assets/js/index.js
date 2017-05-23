@@ -112,9 +112,9 @@ var getContent = (id)=>{
                             $(btn[i]).attr('class','nav-link');
                         }
                         obj = ['Products','Products','Products','Products',
-                        'Products','Products','Products','Products',
-                        'Products']
-                        console.log("products")
+                        'Products','Products',globalData.showcase.Saxophone.pathbg1,globalData.showcase.Saxophone.pathbg2,
+                        globalData.showcase.Saxophone.pathbg3]
+                        getLists()
                     }break;
             }
             if(id==btn[1]||id==btn[2]||id==btn[4]||id==btn[3]) {
@@ -132,10 +132,6 @@ var getContent = (id)=>{
                 $('#prod-btn').attr('onMouseOut','this.style.color="#000"');
             }
             if(id==btn[6]){
-                getLists()
-
-                listsForShop()
-
                 if(window.innerWidth<=992){
                     $('.navbar-toggler-icon').attr('style','filter:invert(100%)');
                     $('.navbar-nav').attr('style','background-color:rgba(25, 25, 25, 0.5);');
@@ -143,12 +139,13 @@ var getContent = (id)=>{
                     $('.navbar-toggler-icon').attr('style','filter:invert(0%)');
                     $('.navbar-nav').attr('style','');
                 }
-                $('#piccontent1').fadeOut(100);
+                $('#piccontent1').fadeOut(300);
                 $('#content1').fadeOut(100);
                 $('#pic2').fadeOut(100);
                 $('#pic2').addClass('forDisplayNone');
                 $('#content2').fadeOut(100);
                 $('#pic1').addClass('pic1edited');
+                $('#pic1').attr('style','background-color:black;transition:0.5s');
                 $('body').attr('style','background-color:black');
                 $('.navbar-brand').attr('style','color:white;transition:0.7s;');
                 $('.nav-link').attr('style','color:white;');
@@ -162,19 +159,19 @@ var getContent = (id)=>{
             }else{
                 $('.navbar-toggler-icon').attr('style','filter:invert(0%)');
                 $('.navbar-nav').attr('style','');
-                $('#piccontent1').fadeIn(1000);
-                $('#content1').fadeIn(1000);
+                $('#piccontent1').fadeIn(100);
+                $('#content1').fadeIn(100);
                 $('#pic2').removeClass('forDisplayNone');
-                $('#pic2').fadeIn(1000);
-                $('#content2').fadeIn(1000);
-                $('#itemlist').fadeOut(600);
-                $('#itemmenu').fadeOut(600);
+                $('#pic2').fadeIn(100);
+                $('#content2').fadeIn(100);
+                $('#itemlist').fadeOut(100);
+                $('#itemmenu').fadeOut(100);
                 $('#pic1').removeClass('pic1edited');
                 $('nav').attr('style','color:black;');
                 $('#footer').removeClass('footeredited');
+                changeName(obj)
             }
             
-            changeName(obj)
     });
 }
 
@@ -185,30 +182,80 @@ var changeName = (obj) => {
     $('#name-ins').html('<h1  class="wow fadeInUp">'+obj[0]+'</h1>');
     $('#content-1').html('<p  class="wow fadeInUp">'+obj[1]+'</p>');
     $('#description').html('<div class="wow fadeInUp col-12"><p class="">'+obj[2]+'</p></div>');
-    $('#content-2').html('<div class="wow fadeInUp col-xs-12 offset-xs-0 col-md-6 offset-md-0 text-center">' + '<img src="'+ 'http://cp.lnwfile.com/unv2hf.jpg' + '" class="rounded-circle" alt="itempicture" style="width:50%" /><br><p class="text-left">' + obj[3] + '</p></div>'+
-                        '<div class="wow fadeInUp col-xs-12  offset-xs-0 col-md-6 offset-md-0 text-center">' + '<img src="'+ 'http://cp.lnwfile.com/unv2hf.jpg' + '" class="rounded-circle" alt="itempicture" style="width:50%" /><br><p class="text-left">' + obj[4] + '</p></div>');    
+    $('#content-2').html('<div class="wow fadeInUp col-xs-12 col-md-4 text-center">' + '<img src="'+ 'http://cp.lnwfile.com/unv2hf.jpg' + '" class="rounded-circle" alt="itempicture" style="width:50%" /><br><p class="text-left">' + obj[3] + '</p></div>'+
+                        '<div class="wow fadeInUp col-xs-12  col-md-4 text-center">' + '<img src="'+ 'http://cp.lnwfile.com/unv2hf.jpg' + '" class="rounded-circle" alt="itempicture" style="width:50%" /><br><p class="text-left">' + obj[4] + '</p></div>'+   
+                        '<div class="wow fadeInUp col-xs-12  col-md-4 text-center">' + '<img src="'+ 'http://cp.lnwfile.com/unv2hf.jpg' + '" class="rounded-circle" alt="itempicture" style="width:50%" /><br><p class="text-left">' + obj[5] + '</p></div>');    
 }
 
 var getLists = () => {
-    // $.getJSON('./assets/json/lists/lists.json', function(data) {
+    $.getJSON('./assets/json/list/lists.json', function(data) {
     // // $.getJSON('https://dev.taehub.me/muchwow/assets/json/showcase/lists.json', function(data) {
-    //     itemData = data;
-    //     var obj = [Object.keys(itemData.showcase)[0],itemData.showcase.Piano.content1,
-    //     itemData.showcase.Piano.content2,itemData.showcase.Piano.content3,
-    //     itemData.showcase.Piano.content4,itemData.showcase.Piano.content5,
-    //     itemData.showcase.Piano.pathbg1,itemData.showcase.Piano.pathbg2,
-    //     itemData.showcase.Piano.pathbg3];    
-    //     changeName(obj)
-    // });
+        itemData = data;
+        piano = [],violin = [],cello = [],guitar = [],harmonica = [],saxophone = [];
+        var arrayObj = [piano,violin,cello,guitar,harmonica,saxophone];
+        for (var key in itemData.root.piano) {
+            var temp = [];
+            temp = [key,itemData.root.piano[key].description,
+            itemData.root.piano[key].price,itemData.root.piano[key].pathpic]
+            piano.push(temp);
+        }
+        for (var key in itemData.root.violin) {
+            var temp = [];
+            temp = [key,itemData.root.violin[key].description,
+            itemData.root.violin[key].price,itemData.root.violin[key].pathpic]
+            violin.push(temp);
+        }
+        for (var key in itemData.root.cello) {
+            var temp = [];
+            temp = [key,itemData.root.cello[key].description,
+            itemData.root.cello[key].price,itemData.root.cello[key].pathpic]
+            cello.push(temp);
+        }
+        for (var key in itemData.root.guitar) {
+            var temp = [];
+            temp = [key,itemData.root.guitar[key].description,
+            itemData.root.guitar[key].price,itemData.root.guitar[key].pathpic]
+            guitar.push(temp);
+        }
+        for (var key in itemData.root.harmonica) {
+            var temp = [];
+            temp = [key,itemData.root.guitar[key].description,
+            itemData.root.guitar[key].price,itemData.root.guitar[key].pathpic]
+            harmonica.push(temp);
+        }
+        for (var key in itemData.root.saxophone) {
+            var temp = [];
+            temp = [key,itemData.root.saxophone[key].description,
+            itemData.root.saxophone[key].price,itemData.root.saxophone[key].pathpic]
+            saxophone.push(temp);
+        }
+    
+        // console.log(arrayObj)
+        listsForShop(arrayObj)
+        
+    });
 }
 
-var listsForShop = () => {
-    
+var listsForShop = (arr=[]) => {   
+    console.log(arr)
+    var idcontent = ['#contentpiano','#contentviolin','#contentcello',
+                    '#contentguitar','#contentharmonica','#contentsaxo'];
     $('.showall').click(()=>{
         for (var i = 0; i < items.length; i++) {
             itemsblock[i].fadeIn(100);
         }
     })
+    for (var i = 0; i < arr.length; i++) {
+        for (var j = 0; j < arr[i].length; j++) {
+            $(idcontent[i]).append(
+                        '<div class="col-xs-12 col-md-4"><div class="card">'+
+                        // '<img class="card-img-top" src="'+arr[0][i][4]+'" alt="Piano-Item'+(i+1)+'">'+
+                        '<div class="card-block"><h4 class="card-title">' + arr[i][j][0] + '</h4>'+
+                        '<p class="card-text">' + arr[i][j][1] + '</p>' + 
+                        '<p class="text-muted"> Price : '+ arr[i][j][2] +' USD. </p>'+
+                        '<div class="text-center"><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div></div>');
+        }
+    }
 
     items[0].click(()=>{
         itemsblock[0].fadeIn(100);

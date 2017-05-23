@@ -25,7 +25,7 @@ nav{
 #pic1{
     padding-top: 2em; 
     /*background-color: rgba(255, 255, 255, 0.5);*/
-    background-image: url('../images/piano/steinway-concept.jpg');
+    /*background-image: url('../images/piano/steinway-concept.jpg');*/
     background-size: cover;
     background-attachment: fixed;
     background-position-x: 50%;
@@ -33,9 +33,10 @@ nav{
     min-height: 95vh;
 }
 .pic1edited{
-    padding-top: 0.5em !important; 
-    min-height: 10vh !important;   
+    padding: 0.5em !important; 
+    min-height: 7vh !important;   
 }
+
 .footeredited{
     padding: 3em !important; 
     min-height: 10vh !important;   
@@ -61,6 +62,9 @@ nav{
 #content2{
     min-height: 40vh;
     height: auto;
+}
+#content2 p{
+    margin-top: 1.5em;
 }
 .content{
     padding: 2em 3em;
@@ -229,8 +233,11 @@ and (max-width:990px){
 
 @media only screen 
 and (min-width:1366px){
+    .card{
+        margin-top: 2em;
+    }
     #content1,#content2{
-        padding: 5em 15em;    
+        padding: 5em 7em;    
     }
     /*.navbar-light .navbar-toggler-icon {
         filter: invert(0%);
