@@ -35,7 +35,7 @@
                 "price": "525",
                 "pathpic": "assets/images/guitar/"
             },
-            "Blueridge BR-140A Craftsman Series Dreadnought Acoustic Guitar  Natural"{
+            "Blueridge BR-140A Craftsman Series Dreadnought Acoustic Guitar  Natural" : {
                 "description": "The Blueridge BR-140A dreadnought acoustic guitar from the Historic Series has a select and rare, solid Adirondack spruce top with hand-carved parabolic top braces in an authentic prewar forward \"X\" pattern.",
                 "price": "860",
                 "pathpic": "assets/images/guitar/"
@@ -58,7 +58,7 @@
                 "pathpic":"assets/images/cello"
             }
         },
-        "saxophone"{
+        "saxophone" : {
             "Allora Vienna Series Intermediate Semi-Curved ":{
                 "description":"The Allora Vienna Series Saxophones are a great value for schools on a budget as well as individuals looking for an affordable step-up instrument.",
                 "price":"1,075.05",
@@ -74,6 +74,25 @@
                 "price":"880",
                 "pathpic":"assets/images/saxophone"
             }
+        },
+        "harmonica":{
+            "Hohner 542 Golden Melody Harmonica":{
+                "description":"The Hohner Golden Melody harmonica has an attractive 1950s look thanks to its rounded shape and closed-sided, full-length covers. ",
+                "price":"47.20",
+                "pathpic":"assets/images/harmonica"
+            },
+            "Hohner 532 Blues Harp MS-Series Harmonica":{
+                "description":"The Hohner 532 Blues Harp Harmonica helps you dig in deep and experience the raw power and grit of the blues. The Blues Harp is engineered for consistent volume and tone that's ideal for intense blues playing.",
+                "price":"36.50",
+                "pathpic":"assets/images/harmonica"
+            },
+            "Hohner 280/64 Chromonica 64 Chromatic Harmonica":{
+                "description":"Hohner Chromonica 280/64 Harmonica is the one played by Stevie Wonder and the standard by which all chromatic harps are judged. Providing sweet sounding tone and reliable performance.",
+                "price":"311.70",
+                "pathpic":"assets/images/harmonica"
+            }
+           
+
         }
     }
 }
