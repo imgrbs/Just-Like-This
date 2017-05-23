@@ -3,11 +3,11 @@
         "Piano": {
             "content1":"“Owing to its perfection, the Steinway gives the pianist, wherever he plays, absolute security.”",
             
-            "content2":"Measuring 227 cm in length, this concert grand offers a large variety of sound and touch from soft piano to strong forte, from clear treble to deep bass.",
+            "content2":"description : Measuring 227 cm in length, this concert grand offers a large variety of sound and touch from soft piano to strong forte, from clear treble to deep bass.",
 
-            "content3":"European spruce, individually weighed-off. Chip-proof, stain-resistant covering for naturals; slip-proof, adbraded ebonized sharps. Durable Linden Wood buttons reinforce keys overy strike. Longkest : 19” (48.3 cm)",
+            "content3":"European spruce, individually weighed-off. Chip-proof, stain-resistant covering for naturals; slip-proof, adbraded ebonized sharps. Durable Linden Wood buttons reinforce keys overy strike. Longkest : 19” (48.3 cm) ",
 
-            "content4":"Made form planks of quarter-sawn spruce.Horizoneal and vertical birch planks present a vented system for humidity escapement.Crowned and reverse-crowned action frame gives a snug fit, intensifies key movement and prevents “slapping” during heavy playing. Large maple dowel ends provide a solid mount for adjustable brass touch-regulating screws. Thickness: 1 ¾” (4.45 cm).",
+            "content4":"Made form planks of quarter-sawn spruce. Horizoneal and vertical birch planks present a vented system for humidity escapement. Crowned and reverse-crowned action frame gives a snug fit, intensifies key movement and prevents “slapping” during heavy playing. Large maple dowel ends provide a solid mount for adjustable brass touch-regulating screws. Thickness: 1 ¾” (4.45 cm).",
 
             "content5":"Heavy, slid brass. Soft, sustaining, and full sostenuto",
 
@@ -19,15 +19,15 @@
 
         },
         "Violin" : {
-            "content1":"violin , the smallest member of the string instruments",
+            "content1":"Life is like playing a violin solo in public and learning the instrument as one goes on.",
 
-            "content2":"The violin is the smallest member of the string family. Sound is produced by drawing the bow across one of the four strings or by plucking the string with a finger. All string instruments produce sound in the same manner. The main differences are the sizes of the instruments and how high or low each instrument can sound.",
+            "content2":"description :The violin is a wooden string instrument in the violin family. ... The violin typically has four strings tuned in perfect fifths, and is most commonly played by drawing a bow across its strings, though it can also be played by plucking the strings with the fingers (pizzicato).",
             
-            "content3":"The violin is a very popular instrument for beginners. Since lots of other students will choose the violin, there will be more competition with other players. However, the violin is one of the most widely used instruments in the world. It is well known for its use in symphony orchestras as well as country and bluegrass bands and other popular groups. The violin is also extremely popular as a solo instrument.",
+            "content3":"The neck of the instrument is the part of the violin that carries most of the stress of the strings. It is the long wooden piece behind the fingerboard, which the fingerboard is glued to. The neck of modern violins is more slender and longer than the neck of the baroque violins.",
             
-            "content4":"aaaaa",
+            "content4":"The body of the violin is the part that amplifies the sound in acoustic violins. The body of the violin can be made of a variety of different woods. While most violins have two-piece backs that are joined together with a seam down the middle, one-piece backs are preferred due to their increased resonance.",
             
-            "content5":"aaaaa",
+            "content5":"The scroll of the violin is the very top of the instrument above the pegbox. The scroll can be identified by its characteristic curl design; however some older instruments have scrolls that were more elaborately carved with animals or figures.",
 
             "pathbg1" : "assets/images/violin/violin-bg-peel.jpg",
             
@@ -38,13 +38,13 @@
         "Cello" : {
             "content1":"When I started learning the cello, I fell in love with the instrument because it seemed like a voice - my voice.",
 
-            "content2":"The cello is actually part of the violin family, which came into prominent use in the eighteenth century. There are several differences between instruments in the viol family and violin family. Viols have flat backs while members of the violin family have curved backs. Viols have c holes rather than f holes and six strings instead of four strings. ",
+            "content2":"description :The cello (violoncello) is the tenor and bass instrument of the violin family (violin, viola, cello).",
             
-            "content3":"aaaaa",
+            "content3":"While the top and back of the body of the cello are traditionally hand-carved, a less expensive cello may be machine generated. But either way, the body's beautiful curves are made by heating the wood, and bending it around pre-made forms.",
             
-            "content4":"aaaaa",
+            "content4":"The neck extends from the body to hold the strings and fingerboard.The neck is an extension of the body of the cello that holds the strings and fingerboard and ends at a stout pegbox & scroll. It is typically carved from sturdy maple.",
             
-            "content5":"aaaaa",
+            "content5":"The strings vibrate and transfer that vibration to the body for amplification and resonance",
 
             "pathbg1" : "assets/images/cello/pic1.jpg",
             
@@ -53,15 +53,15 @@
             "pathbg3" : "assets/images/cello/footer.jpg"
         },
         "Guitar" : {
-            "content1":"aaaaa",
+            "content1":"“Everyone plays guitar alone, but we can play side by side.”",
 
-            "content2":"aaaaa",
+            "content2":"description :The guitar is a string instrument which is played by plucking the strings. The main parts of a guitar are the body, the fretboard, the headstock and the strings. Guitarsare usually made from wood or plastic. Their strings are made of steel or nylon.",
             
-            "content3":"aaaaa",
+            "content3":"The body of a guitar consists of a treble or upper bout, a waist bout, and a bass or lower bout. The waist is the narrow section that divides the treble and bass bout. The body is one of the most important factors in shaping the overall tone of a guitar. It provides the resonance that shapes the tonal qualities.",
             
-            "content4":"aaaaa",
+            "content4":"The neck can be a single piece of wood or several pieces glued together and cut to shape. The fretboard is a separate piece of wood that is attached to the neck. Necks can be glued to the body (set neck) or bolted on.Most necks are wood though alternative materials such as carbon fibre composites have been used.",
             
-            "content5":"aaaaa",
+            "content5":"Strings are numbered from the thinnest string (1st string) to the thickest string (6th string). The tuning is given from the 6th string to the 1st string: E-A-D-G-B-E. This tuning (E-A-D-G-B-E) is called standard tuning.",
 
             "pathbg1" : "assets/images/guitar/pic1.jpg",
 
@@ -70,15 +70,15 @@
             "pathbg3" : "assets/images/guitar/footer.jpg"
         },
         "Harmonica" : {
-            "content1":"aaaaa",
+            "content1":"The harmonica is the most voice-like instrument, you can make it wail, feel happy, or cry. It's like singing the blues without words.",
 
-            "content2":"aaaaa",
+            "content2":"description : The harmonica, also known as a French harp or mouth organ, is a free reed wind instrument used worldwide in many musical genres, notably in blues, American folk music, classical music, jazz, country, and rock and roll.",
             
-            "content3":"aaaaa",
+            "content3":"The plate cover, which has been machined, shaped, and stamped with the company name and harmonica type, is attached to the reed/comb assembly with screws or nails.",
             
-            "content4":"aaaaa",
+            "content4":"Wooden combs are cut from a block of wood. Channels are carved out in descending lengths across the comb. Plastic combs are injection molded. The plastic compound is heated to a semi-fluid state and then mechanically injected into a mold. The compound hardens quickly, the mold is popped open, and the new comb is expelled.",
             
-            "content5":"aaaaa",
+            "content5":"The reed plate is manually tuned. The tuner strikes the appropriate tuning fork and then files each reed to the correct tone. Filing the base end lowers the pitch; filing the free end raises the pitch.",
 
             "pathbg1" : "assets/images/harmonica/pic1.jpg",
 
@@ -87,15 +87,15 @@
             "pathbg3" : "assets/images/harmonica/footer.jpg"
         },
         "Saxophone" : {
-            "content1":"aaaaa",
+            "content1":"If you like an instrument that sings, play the saxophone. At its best it's like the human voice.",
 
-            "content2":"aaaaa",
+            "content2":"description : The saxophone is a family of woodwind instruments. Saxophones are usually made of brass and played with a single-reed mouthpiece similar to that of the clarinet. The saxophonefamily was invented by the Belgian instrument maker Adolphe Sax in 1840.",
             
-            "content3":"aaaaa",
+            "content3":"When you blow into the mouthpiece, the reed vibrates. Without the aid of the other parts of the saxophone, it produces a high, shrill sound.",
             
-            "content4":"aaaaa",
+            "content4":"The saxophone has had a complete overhaul of the key layout. Changes to the Front F key shape and mechanism, a position change of the left-hand palm keys, left-hand table keys, right-hand side keys and right-hand pinky keys offers a smoother playing experience giving players more confidence when performing.",
             
-            "content5":"aaaaa",
+            "content5":"Bell horns, Antigua has combined great performance with striking cosmetics. The body and keys are gold lacquered. The entire body is deluxe engraved all throughout the bell, inside the bell flare, through the bow, up the back of the body and all the way through the neck.",
 
             "pathbg1" : "assets/images/saxophone/pic1.jpg",
             
