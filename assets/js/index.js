@@ -1,28 +1,42 @@
 new WOW().init();
 
-x0p({
-    title: 'Async Operation',
-    text: 'Try to do some operation.',
-    icon: 'info',
-    animationType: 'fadeIn',
-    buttons: [
-        {
-            type: 'cancel'
-        },
-        {
-            type: 'info',
-            text: 'Do It!',
-            showLoading: true
+var popup = () => {
+    var temp = $('#itemcarttemp').get();
+    console.log(temp)
+    x0p({
+        title: 'Confirm Order',
+        html: true,
+        text: 'Please Confirm Your Order.',
+        animationType: 'fadeIn',
+        buttons: [
+            {
+                type: 'cancel'
+            },
+            {
+                type: 'info',
+                text: 'Confirm',
+                showLoading: true
+            }
+        ]
+    }).then(function(data) {
+        if(data.button == 'info') {
+            
+            setTimeout(function() {
+                x0p('Success', null, 'ok', false);
+                $('#listcartitemuser').html('');
+                $('.modal-dialog').fadeOut(850);
+                $('.modal-backdrop').fadeOut(850);
+                if(numOfValue>0){
+                    numOfValue--;
+                }else{
+                    numOfValue=0;
+                }
+                getNumOfProd.text(numOfValue);
+            }, 1000);
+
         }
-    ]
-}).then(function(data) {
-    if(data.button == 'info') {
-        // Simulate Delay
-        setTimeout(function() {
-            x0p('Done', null, 'ok', false);
-        }, 1500);
-    }
-});
+    });
+}
 
 var btn = ['#piano-btn','#violin-btn','#cello-btn',
         '#guitar-btn','#harmo-btn','#saxo-btn','#prod-btn'];
@@ -313,13 +327,19 @@ var listsForShop = (arr=[]) => {
             //     tempNameIns = tempNameIns.substr(0,23)+'...';
             // }
             var prodId = tempName+(j+1);
-            $(idcontent[i]).append(
-                '<div id="id'+tempName+(j+1)+'" class="col-xs-12 col-md-4"><div class="card">'+
-                '<img class="card-img-top" src="'+arr[i][j][3]+'" alt="Piano-Item'+(i+1)+'">'+
-                '<div class="card-block"><h4 class="card-title">' + tempNameIns + '</h4>'+
+            var iduni = 'idpicture'+prodId;
+            var img = document.getElementById(iduni);
+            var mainId = 'main'+prodId;
+            var htmlTag = 
+                '<div  id="'+mainId+'" class="col-xs-12 col-md-4"><div class="card">'+
+                '<div id="'+iduni+'"><img  class="card-img-top" src="'+arr[i][j][3]+'" alt="Item'+(i+1)+'"></div>'+
+                '<div class="card-block"><h4 id="idname'+prodId+'" class="card-title">' + tempNameIns + '</h4>'+
                 '<p class="card-text">' + arr[i][j][1] + '</p>' +
-                '<p class="text-muted"> Price : '+ arr[i][j][2] +' USD</p>'+
-                '<div class="text-center"><a id="addCart'+tempName+(j+1)+'" class="btn btn-primary" style="color:white;cursor:pointer" onclick="addToCart(prodId)">Add to Cart</a></div></div></div></div>'
+                '<p id="idprice'+prodId+'" class="text-muted"> Price : '+ arr[i][j][2] +' USD</p>'+
+                '<div class="text-center"><a id="addCart'+prodId+'" class="btn btn-primary"' + 
+                'style="color:white;cursor:pointer" onclick="addToCart('+mainId+','+iduni+',idname'+prodId+',idprice'+prodId+')">Add to Cart</a></div></div></div></div>';
+            $(idcontent[i]).append(
+                htmlTag
             );
             getCartBtn((j+1),i);
         }
@@ -396,9 +416,22 @@ var getCartBtn = (id,i) => {
     arrAddCartBtn[i].push($('#addCart'+tempName+id));
 }
 
-var addToCart = () => {
+var addToCart = (mainId,genpic,id2,id3) => {
     numOfValue++;
+    var nameRem = 'box'+mainId;
+    var img = genpic.innerHTML;
+    console.log(mainId);
+    var tempBlock = '<div id="'+nameRem+'" class="col-xs-12 text-center"><div class="card text-left">'+img+'<div class="card-block">'+
+                    $(id2).html()+"<br>"+$(id3).html()+'</div></div></div>';
     getNumOfProd.text(numOfValue);
-
+    // console.log(genpic)
+    $('#listcartitemuser').append(tempBlock);
 }
 
+var loaditem = () => {
+    var text = $('#listcartitemtempuser');
+    // for
+    
+    $('#listcartitemuser').append(text);
+
+}

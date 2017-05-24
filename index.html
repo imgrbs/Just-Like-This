@@ -41,9 +41,11 @@
                         <li id="products" class="nav-item">
                             <a id="prod-btn" class="nav-link">Products</a>
                         </li>
-                        <li id="cart" class="nav-item">
-                            <a id="cart-btn" class="nav-link"><img src="assets/images/shopping-cart.svg" alt="" class="cart" onclick="x0p()"></a>
-                            <span id="valueitem">0</span>
+                        <li id="cart" class="nav-item" onclick="loaditem()">
+                            <a id="cart-btn" class="nav-link" data-toggle="modal" data-target="#itemcarttemp"><img src="assets/images/shopping-cart.svg" alt=""  class="cart">
+                                <span id="valueitem">0</span>
+                            </a>
+                            
                         </li>
                     </ul>
                 </div>
@@ -176,6 +178,27 @@
         <h6h5>site design / logo © 2017 JustLikeThis Project in INT106@SIT-KMUTT</h6>
         <h6>This site is for educate in INT106 subject at KMUTT powered by #tltbOnline</h6>
     </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="itemcarttemp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h5 class="modal-title" id="exampleModalLongTitle">Your Orders</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="listcartitemuser" class="modal-body" onload="loadList()">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="popup()">Check out</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 
 <script src="./assets/js/jquery-3.2.1.min.js"></script>

@@ -10,7 +10,7 @@ body{
     margin: 0;
 }
 nav{
-    z-index: 9999;
+    z-index: 1000;
     transition: 0.5s; 
 }
 #footer{
@@ -206,27 +206,32 @@ li a {
     cursor: pointer;
     display: none;
 }
-/*#cart-btn{
-    display: none;
-}*/
+#cart-btn{
+    min-height: 50px;
+    text-align: center;
+}
 .cart{
     width:30px;
     height: 30px;
     position: absolute;
-    top: 15;
-    right: -50;
     display: none;
 }
 #valueitem{
+    pointer-events: none;
+    transition: 1s;
     font-size: 15px;
     color: white;
     position: absolute;
-    top: 15;
-    right: -15px;
+    right: -25px;
+    bottom: 1.2em;
     background-color: #FFD42A;
     padding: 0.1em 0.5em;
     border-radius: 50%;
     display: none;
+}
+#cart-btn:hover{
+    filter: invert(30%);
+    transition: 1s;
 }
 .demoProd{
     margin-top: 0.8em;
@@ -235,9 +240,49 @@ li a {
     padding: 0.5em 0.5em;
 }
 .card-img-top{
-    max-height: 200px;
+    max-width: 200px;
 }
 
+.x0p.default .icon-wrapper {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.x0p.default .text-wrapper {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+}
+.modal-title{
+    margin: 0 auto;
+}
+.modal-content {
+    border-radius: 0;
+}
+.modal.show .modal-dialog {
+    margin-top: 3em;
+    z-index: 4000;
+}
+.btn {
+    min-width: 112.72px;
+    border-radius: 0;
+    cursor: pointer;
+}
+.modal-dialog .btn-primary {
+    color: #fff;
+    background-color: #14c147;
+    border-color: #00731b;
+}
+.modal-dialog .btn-primary:hover {
+    color: #fff;
+    background-color: #00731b;
+    border-color: #00731b;
+}
+#listcartitemuser{
+    overflow-y: scroll;
+    height: 300px;
+}
 @media only screen 
 and (min-width:0px)
 and (max-width:320px){
@@ -349,6 +394,9 @@ and (max-width:990px){
 
 @media only screen 
 and (min-width:1366px){
+    .card-title{
+        font-size: 1.25em;
+    }
     .card{
         margin-top: 2em;
     }
