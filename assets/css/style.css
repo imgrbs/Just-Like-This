@@ -169,7 +169,7 @@ li a {
 #itemguitar h1,
 #itemharmo h1,
 #itemsaxo h1{
-    margin: 1em 0;
+    margin: 1em 0 0.25em 0;
 }
 
 .showall{
@@ -187,9 +187,28 @@ li a {
     -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,.25);
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.25);
 }
+.card-text{
+    overflow-y: scroll;
+    height: 100px;
+    /*width: 1500px;*/
+}
 .btn{
     min-width: 112.72px;
 }
+
+.readmore{
+    color: #014c8c !important;
+    cursor: pointer;
+}
+
+.closetext{
+    color: red;
+    cursor: pointer;
+    display: none;
+}
+/*#cart-btn{
+    display: none;
+}*/
 .cart{
     width:30px;
     height: 30px;
@@ -209,6 +228,15 @@ li a {
     border-radius: 50%;
     display: none;
 }
+.demoProd{
+    margin-top: 0.8em;
+}
+.demoProd p{
+    padding: 0.5em 0.5em;
+}
+.card-img-top{
+    max-height: 200px;
+}
 
 @media only screen 
 and (min-width:0px)
@@ -216,6 +244,74 @@ and (max-width:320px){
     .bg-promo {
         min-width: 310px;
     }
+    
+    #valueitem {
+        font-size: 15px;
+        color: white;
+        position: absolute;
+        bottom: 2em;
+        right: 7em;
+        background-color: #FFD42A;
+        padding: 0.1em 0.5em;
+        border-radius: 50%;
+        display: none;
+    }
+}
+
+@media only screen 
+and (min-width:0px)
+and (max-width:768px){
+    #cart-btn{
+        height: auto;
+        padding: 1em;
+        text-align: center;
+    }
+    .cart{
+        position: relative;
+    }
+}
+
+@media only screen 
+and (min-width:0px)
+and (max-width:1024px)
+and (max-height:1365px)
+and (orientation:portrait){
+    #prod-btn{
+        text-align: center;
+    }
+}
+
+@media only screen 
+and (min-width:360px)
+and (max-width:736px){
+    #valueitem {
+        font-size: 15px;
+        color: white;
+        position: absolute;
+        bottom: 2em;
+        right: 10.5em;
+        background-color: #FFD42A;
+        padding: 0.1em 0.5em;
+        border-radius: 50%;
+        display: none;
+    }    
+}
+@media only screen 
+and (min-width:768px)
+and (max-width:1024px)
+and (max-height:1365px)
+and (orientation: portrait){
+    #valueitem {
+        font-size: 15px;
+        color: white;
+        position: absolute;
+        bottom: 1em;
+        right: 20em;
+        background-color: #FFD42A;
+        padding: 0.1em 0.5em;
+        border-radius: 50%;
+        display: none;
+    }    
 }
 
 @media only screen 
@@ -232,8 +328,8 @@ and (max-width:990px){
         padding: 1em;
         background-color: rgba(255, 255, 255, 0.90);
     }
-    #content1{
-        padding: 4em 3em 3em 3em;    
+    #content1 {
+        padding: 4em 2em 3em 2em;
     }
     #content-1 p {
         font-size: 20px;

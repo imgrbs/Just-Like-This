@@ -62,7 +62,7 @@
 
             "pathbg1" : "assets/images/cello/pic1.jpg",
             
-            "pathbg2" : "assets/images/cello/pic2.jpg",
+            "pathbg2" : "assets/images/cello/pic2.png",
             
             "pathbg3" : "assets/images/cello/footer.jpg"
         },
@@ -106,11 +106,11 @@
 
             "contentpic3":"assets/images/harmonica/content5.jpg",
 
-            "pathbg1" : "assets/images/harmonica/pic1.jpg",
+            "pathbg1" : "assets/images/harmonica/pic1.png",
 
-            "pathbg2" : "assets/images/harmonica/pic2.jpg",
+            "pathbg2" : "assets/images/harmonica/pic2.png",
             
-            "pathbg3" : "assets/images/harmonica/footer.jpg"
+            "pathbg3" : "assets/images/harmonica/footer.png"
         },
         "Saxophone" : {
             "content1":"If you like an instrument that sings, play the saxophone. At its best it's like the human voice.",
