@@ -10,7 +10,13 @@
             "content4":"Made form planks of quarter-sawn spruce. Horizoneal and vertical birch planks present a vented system for humidity escapement. Crowned and reverse-crowned action frame gives a snug fit, intensifies key movement and prevents “slapping” during heavy playing. Large maple dowel ends provide a solid mount for adjustable brass touch-regulating screws. Thickness: 1 ¾” (4.45 cm).",
 
             "content5":"Heavy, slid brass. Soft, sustaining, and full sostenuto",
+            
+            "contentpic1":"assets/images/piano/content5.jpg",
 
+            "contentpic2":"assets/images/piano/pia-prod-1.jpg",
+
+            "contentpic3":"assets/images/piano/pia-prod-2.jpg",
+            
             "pathbg1" : "assets/images/piano/steinway-concept.jpg",
             
             "pathbg2" : "assets/images/piano/steinway-piano2.jpg",
@@ -29,6 +35,12 @@
             
             "content5":"The scroll of the violin is the very top of the instrument above the pegbox. The scroll can be identified by its characteristic curl design; however some older instruments have scrolls that were more elaborately carved with animals or figures.",
 
+            "contentpic1":"assets/images/violin/content3.jpg",
+            
+            "contentpic2":"assets/images/violin/content4.jpg",
+            
+            "contentpic3":"assets/images/violin/content5.jpg",
+
             "pathbg1" : "assets/images/violin/violin-bg-peel.jpg",
             
             "pathbg2" : "assets/images/violin/violin-bg-peel2.jpg",
@@ -46,9 +58,15 @@
             
             "content5":"The strings vibrate and transfer that vibration to the body for amplification and resonance",
 
+            "contentpic1":"assets/images/cello/content3.jpg",
+
+            "contentpic2":"assets/images/cello/content4.jpg",
+
+            "contentpic3":"assets/images/cello/content5.jpg",
+
             "pathbg1" : "assets/images/cello/pic1.jpg",
             
-            "pathbg2" : "assets/images/cello/pic2.jpg",
+            "pathbg2" : "assets/images/cello/pic2.png",
             
             "pathbg3" : "assets/images/cello/footer.jpg"
         },
@@ -62,6 +80,12 @@
             "content4":"The neck can be a single piece of wood or several pieces glued together and cut to shape. The fretboard is a separate piece of wood that is attached to the neck. Necks can be glued to the body (set neck) or bolted on.Most necks are wood though alternative materials such as carbon fibre composites have been used.",
             
             "content5":"Strings are numbered from the thinnest string (1st string) to the thickest string (6th string). The tuning is given from the 6th string to the 1st string: E-A-D-G-B-E. This tuning (E-A-D-G-B-E) is called standard tuning.",
+
+            "contentpic1":"assets/images/guitar/content3.jpg",
+
+            "contentpic2":"assets/images/guitar/content4.jpg",
+
+            "contentpic3":"assets/images/guitar/content5.jpg",
 
             "pathbg1" : "assets/images/guitar/pic1.jpg",
 
@@ -80,11 +104,17 @@
             
             "content5":"The reed plate is manually tuned. The tuner strikes the appropriate tuning fork and then files each reed to the correct tone. Filing the base end lowers the pitch; filing the free end raises the pitch.",
 
-            "pathbg1" : "assets/images/harmonica/pic1.jpg",
+            "contentpic1":"assets/images/harmonica/content3.jpg",
 
-            "pathbg2" : "assets/images/harmonica/pic2.jpg",
+            "contentpic2":"assets/images/harmonica/content4.jpg",
+
+            "contentpic3":"assets/images/harmonica/content5.jpg",
+
+            "pathbg1" : "assets/images/harmonica/pic1.png",
+
+            "pathbg2" : "assets/images/harmonica/pic2.png",
             
-            "pathbg3" : "assets/images/harmonica/footer.jpg"
+            "pathbg3" : "assets/images/harmonica/footer.png"
         },
         "Saxophone" : {
             "content1":"If you like an instrument that sings, play the saxophone. At its best it's like the human voice.",
@@ -96,6 +126,12 @@
             "content4":"The saxophone has had a complete overhaul of the key layout. Changes to the Front F key shape and mechanism, a position change of the left-hand palm keys, left-hand table keys, right-hand side keys and right-hand pinky keys offers a smoother playing experience giving players more confidence when performing.",
             
             "content5":"Bell horns, Antigua has combined great performance with striking cosmetics. The body and keys are gold lacquered. The entire body is deluxe engraved all throughout the bell, inside the bell flare, through the bow, up the back of the body and all the way through the neck.",
+
+            "contentpic1":"assets/images/saxophone/content3.jpg",
+
+            "contentpic2":"assets/images/saxophone/content4.jpg",
+
+            "contentpic3":"assets/images/saxophone/content5.jpg",
 
             "pathbg1" : "assets/images/saxophone/pic1.jpg",
             

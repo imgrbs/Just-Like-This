@@ -1,6 +1,42 @@
 new WOW().init();
 
+var popup = () => {
+    var temp = $('#itemcarttemp').get();
+    console.log(temp)
+    x0p({
+        title: 'Confirm Order',
+        html: true,
+        text: 'Please Confirm Your Order.',
+        animationType: 'fadeIn',
+        buttons: [
+            {
+                type: 'cancel'
+            },
+            {
+                type: 'info',
+                text: 'Confirm',
+                showLoading: true
+            }
+        ]
+    }).then(function(data) {
+        if(data.button == 'info') {
+            
+            setTimeout(function() {
+                x0p('Success', null, 'ok', false);
+                $('#listcartitemuser').html('');
+                $('.modal-dialog').fadeOut(850);
+                $('.modal-backdrop').fadeOut(850);
+                if(numOfValue>0){
+                    numOfValue--;
+                }else{
+                    numOfValue=0;
+                }
+                getNumOfProd.text(numOfValue);
+            }, 1000);
 
+        }
+    });
+}
 
 var btn = ['#piano-btn','#violin-btn','#cello-btn',
         '#guitar-btn','#harmo-btn','#saxo-btn','#prod-btn'];
@@ -31,7 +67,8 @@ var getOnStart = () =>{
         globalData.showcase.Piano.content2,globalData.showcase.Piano.content3,
         globalData.showcase.Piano.content4,globalData.showcase.Piano.content5,
         globalData.showcase.Piano.pathbg1,globalData.showcase.Piano.pathbg2,
-        globalData.showcase.Piano.pathbg3];    
+        globalData.showcase.Piano.pathbg3,globalData.showcase.Piano.contentpic1,
+        globalData.showcase.Piano.contentpic2,globalData.showcase.Piano.contentpic3];    
         changeName(obj)
     });
     
@@ -50,7 +87,8 @@ var getContent = (id)=>{
                         globalData.showcase.Piano.content2,globalData.showcase.Piano.content3,
                         globalData.showcase.Piano.content4,globalData.showcase.Piano.content5,
                         globalData.showcase.Piano.pathbg1,globalData.showcase.Piano.pathbg2,
-                        globalData.showcase.Piano.pathbg3];
+                        globalData.showcase.Piano.pathbg3,globalData.showcase.Piano.contentpic1,
+                        globalData.showcase.Piano.contentpic2,globalData.showcase.Piano.contentpic3];
                     }break;
                 case (btn[1]):{
                         $(btn[0]).attr('class','nav-link');
@@ -61,7 +99,8 @@ var getContent = (id)=>{
                         globalData.showcase.Violin.content2,globalData.showcase.Violin.content3,
                         globalData.showcase.Violin.content4,globalData.showcase.Violin.content5,
                         globalData.showcase.Violin.pathbg1,globalData.showcase.Violin.pathbg2,
-                        globalData.showcase.Violin.pathbg3];
+                        globalData.showcase.Violin.pathbg3,globalData.showcase.Violin.contentpic1,
+                        globalData.showcase.Violin.contentpic2,globalData.showcase.Violin.contentpic3];
                     }break;
                 case (btn[2]):{
                         for (var i = 0; i < 2; i++) {
@@ -74,7 +113,8 @@ var getContent = (id)=>{
                         globalData.showcase.Cello.content2,globalData.showcase.Cello.content3,
                         globalData.showcase.Cello.content4,globalData.showcase.Cello.content5,
                         globalData.showcase.Cello.pathbg1,globalData.showcase.Cello.pathbg2,
-                        globalData.showcase.Cello.pathbg3];
+                        globalData.showcase.Cello.pathbg3,globalData.showcase.Cello.contentpic1,
+                        globalData.showcase.Cello.contentpic2,globalData.showcase.Cello.contentpic3];
                     }break;
                 case (btn[3]):{
                         for (var i = 0; i < 3; i++) {
@@ -87,7 +127,8 @@ var getContent = (id)=>{
                         globalData.showcase.Guitar.content2,globalData.showcase.Guitar.content3,
                         globalData.showcase.Guitar.content4,globalData.showcase.Guitar.content5,
                         globalData.showcase.Guitar.pathbg1,globalData.showcase.Guitar.pathbg2,
-                        globalData.showcase.Guitar.pathbg3];
+                        globalData.showcase.Guitar.pathbg3,globalData.showcase.Guitar.contentpic1,
+                        globalData.showcase.Guitar.contentpic2,globalData.showcase.Guitar.contentpic3];
                     }break;
                 case (btn[4]):{
                         for (var i = 0; i < 4; i++) {
@@ -98,7 +139,8 @@ var getContent = (id)=>{
                         globalData.showcase.Harmonica.content2,globalData.showcase.Harmonica.content3,
                         globalData.showcase.Harmonica.content4,globalData.showcase.Harmonica.content5,
                         globalData.showcase.Harmonica.pathbg1,globalData.showcase.Harmonica.pathbg2,
-                        globalData.showcase.Harmonica.pathbg3];
+                        globalData.showcase.Harmonica.pathbg3,globalData.showcase.Harmonica.contentpic1,
+                        globalData.showcase.Harmonica.contentpic2,globalData.showcase.Harmonica.contentpic3];
                     }break;
                 case (btn[5]):{
                         for (var i = 0; i < 5; i++) {
@@ -106,9 +148,10 @@ var getContent = (id)=>{
                         }
                         obj = [Object.keys(globalData.showcase)[5],globalData.showcase.Saxophone.content1,
                         globalData.showcase.Saxophone.content2,globalData.showcase.Saxophone.content3,
-                        globalData.showcase.Saxophone.content4,globalData.showcase.Piano.content5,
+                        globalData.showcase.Saxophone.content4,globalData.showcase.Saxophone.content5,
                         globalData.showcase.Saxophone.pathbg1,globalData.showcase.Saxophone.pathbg2,
-                        globalData.showcase.Saxophone.pathbg3];
+                        globalData.showcase.Saxophone.pathbg3,globalData.showcase.Saxophone.contentpic1,
+                        globalData.showcase.Saxophone.contentpic2,globalData.showcase.Saxophone.contentpic3];
                     }break;
                 case (btn[6]):{
                         for (var i = 0; i < 6; i++) {
@@ -192,9 +235,9 @@ var changeName = (obj) => {
     $('#name-ins').html('<h1  class="wow fadeInUp">'+obj[0]+'</h1>');
     $('#content-1').html('<p  class="wow fadeInUp">'+obj[1]+'</p>');
     $('#description').html('<div class="wow fadeInUp col-12"><p class="">'+obj[2]+'</p></div>');
-    $('#content-2').html('<div class="wow fadeInUp col-xs-12 col-md-4 text-center">' + '<img src="'+ 'http://cp.lnwfile.com/unv2hf.jpg' + '" class="rounded-circle" alt="itempicture" style="width:50%" /><br><p class="text-left">' + obj[3] + '</p></div>'+
-                        '<div class="wow fadeInUp col-xs-12  col-md-4 text-center">' + '<img src="'+ 'http://cp.lnwfile.com/unv2hf.jpg' + '" class="rounded-circle" alt="itempicture" style="width:50%" /><br><p class="text-left">' + obj[4] + '</p></div>'+   
-                        '<div class="wow fadeInUp col-xs-12  col-md-4 text-center">' + '<img src="'+ 'http://cp.lnwfile.com/unv2hf.jpg' + '" class="rounded-circle" alt="itempicture" style="width:50%" /><br><p class="text-left">' + obj[5] + '</p></div>');    
+    $('#content-2').html('<div class="demoProd wow fadeInUp col-xs-12 col-md-4 text-center">' + '<img src="'+ obj[9] + '" class="rounded-circle" alt="itempicture" style="width:50%" /><br><p class="text-left">' + obj[3] + '</p></div>'+
+                        '<div class="demoProd wow fadeInUp col-xs-12  col-md-4 text-center">' + '<img src="'+ obj[10] + '" class="rounded-circle" alt="itempicture" style="width:50%" /><br><p class="text-left">' + obj[4] + '</p></div>'+   
+                        '<div class="demoProd wow fadeInUp col-xs-12  col-md-4 text-center">' + '<img src="'+ obj[11] + '" class="rounded-circle" alt="itempicture" style="width:50%" /><br><p class="text-left">' + obj[5] + '</p></div>');    
 }
 
 var getLists = () => {
@@ -241,7 +284,6 @@ var getLists = () => {
                     saxophone.push(temp);
                 }
             
-                // console.log(arrayObj)
                 listsForShop(arrayObj)
         });
     }
@@ -281,18 +323,25 @@ var listsForShop = (arr=[]) => {
                 keepText = tempContent.substr(showChar,tempContent.length - showChar);
             }
             var tempNameIns = arr[i][j][0];
-            if(tempNameIns.length>23){
-                tempNameIns = tempNameIns.substr(0,23)+'...';
-            }
+            // if(tempNameIns.length>23){
+            //     tempNameIns = tempNameIns.substr(0,23)+'...';
+            // }
+            var prodId = tempName+(j+1);
+            var iduni = 'idpicture'+prodId;
+            var img = document.getElementById(iduni);
+            var mainId = 'main'+prodId;
+            var htmlTag = 
+                '<div  id="'+mainId+'" class="col-xs-12 col-md-4"><div class="card">'+
+                '<div id="'+iduni+'"><img  class="card-img-top" src="'+arr[i][j][3]+'" alt="Item'+(i+1)+'"></div>'+
+                '<div class="card-block"><h4 id="idname'+prodId+'" class="card-title">' + tempNameIns + '</h4>'+
+                '<p class="card-text">' + arr[i][j][1] + '</p>' +
+                '<p id="idprice'+prodId+'" class="text-muted"> Price : '+ arr[i][j][2] +' USD</p>'+
+                '<div class="text-center"><a id="addCart'+prodId+'" class="btn btn-primary"' + 
+                'style="color:white;cursor:pointer" onclick="addToCart('+mainId+','+iduni+',idname'+prodId+',idprice'+prodId+')">Add to Cart</a></div></div></div></div>';
             $(idcontent[i]).append(
-                '<div id="id'+tempName+(j+1)+'" class="col-xs-12 col-md-4"><div class="card">'+
-                '<img class="card-img-top" src="'+arr[i][j][3]+'" alt="Piano-Item'+(i+1)+'">'+
-                '<div class="card-block"><h4 class="card-title">' + tempNameIns + '</h4>'+
-                '<p class="card-text">' + tempText + '<span id=dot"'+ tempName+(j+1) +'">...</span>' + '</p>' + 
-                '<p class="text-muted"> Price : '+ arr[i][j][2] +' USD</p>'+
-                '<div class="text-center"><a id="addCart'+(j+1)+'" href="#" class="btn btn-primary">Add to Cart</a></div></div></div></div>'
+                htmlTag
             );
-            
+            getCartBtn((j+1),i);
         }
     }
 
@@ -346,11 +395,43 @@ var listsForShop = (arr=[]) => {
             itemsblock[i].fadeOut(100);
         }
     })
+
 }
 
 var numOfValue = 0;
+var getNumOfProd = $('#valueitem');
+var arrAddCartBtn = [piano = [],violin = [],cello = [],
+                    guitar = [],harmonica = [],saxophone = []];
 
-var addToCart = () => {
+var getCartBtn = (id,i) => {
+    var tempName = '';
+    switch (i) {
+        case 0:{tempName='piano'}break;
+        case 1:{tempName='violin'}break;
+        case 2:{tempName='cello'}break;
+        case 3:{tempName='guitar'}break;
+        case 4:{tempName='harmonica'}break;
+        case 5:{tempName='saxophone'}break;
+    }
+    arrAddCartBtn[i].push($('#addCart'+tempName+id));
+}
+
+var addToCart = (mainId,genpic,id2,id3) => {
     numOfValue++;
-    $('#valueitem').text(numOfValue);
+    var nameRem = 'box'+mainId;
+    var img = genpic.innerHTML;
+    console.log(mainId);
+    var tempBlock = '<div id="'+nameRem+'" class="col-xs-12 text-center"><div class="card text-left">'+img+'<div class="card-block">'+
+                    $(id2).html()+"<br>"+$(id3).html()+'</div></div></div>';
+    getNumOfProd.text(numOfValue);
+    // console.log(genpic)
+    $('#listcartitemuser').append(tempBlock);
+}
+
+var loaditem = () => {
+    var text = $('#listcartitemtempuser');
+    // for
+    
+    $('#listcartitemuser').append(text);
+
 }
