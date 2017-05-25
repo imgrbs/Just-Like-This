@@ -286,6 +286,8 @@ var getLists = () => {
    
 }
 
+var tempName = '';
+var mainId = '';
 var listsForShop = (arr=[]) => {   
     console.log(arr)
     var idcontent = ['#contentpiano','#contentviolin','#contentcello',
@@ -297,7 +299,6 @@ var listsForShop = (arr=[]) => {
     })
     
     for (var i = 0; i < arr.length; i++) {
-        var tempName = '';
         switch (i) {
             case 0:{tempName='piano'}break;
             case 1:{tempName='violin'}break;
@@ -307,7 +308,6 @@ var listsForShop = (arr=[]) => {
             case 5:{tempName='saxophone'}break;
         }
 
-        
 
         for (var j = 0; j < arr[i].length; j++) {
             var showChar = 100;
@@ -322,18 +322,18 @@ var listsForShop = (arr=[]) => {
             // if(tempNameIns.length>23){
             //     tempNameIns = tempNameIns.substr(0,23)+'...';
             // }
-            var prodId = tempName+(j+1);
+            let prodId = this.tempName+(j+1);
             var iduni = 'idpicture'+prodId;
             var img = document.getElementById(iduni);
-            var mainId = 'main'+prodId;
+            mainId = 'main'+prodId;
             var htmlTag = 
                 '<div  id="'+mainId+'" class="col-xs-12 col-md-4"><div class="card">'+
-                '<div id="'+iduni+'"><img  class="card-img-top" src="'+arr[i][j][3]+'" alt="Item'+(i+1)+'"></div>'+
+                '<div id="'+iduni+'" style="margin:0 auto;"><img  class="card-img-top" src="'+arr[i][j][3]+'" alt="Item'+(i+1)+'"></div>'+
                 '<div class="card-block"><h4 id="idname'+prodId+'" class="card-title">' + tempNameIns + '</h4>'+
                 '<p class="card-text">' + arr[i][j][1] + '</p>' +
                 '<p id="idprice'+prodId+'" class="text-muted"> Price : '+ arr[i][j][2] +' USD</p>'+
                 '<div class="text-center"><a id="addCart'+prodId+'" class="btn btn-primary"' + 
-                'style="color:white;cursor:pointer" onclick="addToCart('+mainId+','+iduni+',idname'+prodId+',idprice'+prodId+')">Add to Cart</a></div></div></div></div>';
+                'style="color:white;cursor:pointer" onclick="addToCart('+this.mainId+','+iduni+',idname'+prodId+',idprice'+prodId+')">Add to Cart</a></div></div></div></div>';
             $(idcontent[i]).append(
                 htmlTag
             );
@@ -412,14 +412,19 @@ var getCartBtn = (id,i) => {
     arrAddCartBtn[i].push($('#addCart'+tempName+id));
 }
 
-var addToCart = (mainId,genpic,id2,id3) => {
+var nameRem = '';
+var addToCart = (mId,genpic,id2,id3) => {
     numOfValue++;
-    var nameRem = 'box'+mainId;
+    
+    nameRem = 'box'+mainId;
     var img = genpic.innerHTML;
     console.log(mainId);
-    var tempBlock = '<div id="'+nameRem+'" class="col-xs-12 text-center"><div class="card text-left">'+img+'<div class="card-block">'+
+    console.log(nameRem);
+    var tempBlock = '<div id="'+nameRem+'" class="col-xs-12 text-center"><div class="card "><div style="position:absolute;right:0.5em;font-size:2em;">'+
+                    '<a class="closebtn" onclick="removeBlock(nameRem)" >×</a></div><div style="margin:0 auto;">'+img+'</div><div class="card-block text-left">'+
                     $(id2).html()+"<br>"+$(id3).html()+'</div></div></div>';
     getNumOfProd.text(numOfValue);
+    console.log(nameRem);
     // console.log(genpic)
     $('#listcartitemuser').append(tempBlock);
 }
@@ -430,4 +435,11 @@ var loaditem = () => {
     
     $('#listcartitemuser').append(text);
 
+}
+
+var removeBlock = (myId) => {
+    numOfValue--;
+    getNumOfProd.text(numOfValue);
+
+    $('#'+myId).remove();
 }
