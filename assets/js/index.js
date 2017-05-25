@@ -24,15 +24,11 @@ var popup = () => {
             setTimeout(function() {
                 x0p('Success', null, 'ok', false);
                 $('#listcartitemuser').html('');
-                $('.modal-dialog').fadeOut(850);
-                $('.modal-backdrop').fadeOut(850);
-                if(numOfValue>0){
-                    numOfValue--;
-                }else{
-                    numOfValue=0;
-                }
+                $('#itemcarttemp').modal('hide');
+            
+                numOfValue=0;
                 getNumOfProd.text(numOfValue);
-            }, 1000);
+            }, 2000);
 
         }
     });
